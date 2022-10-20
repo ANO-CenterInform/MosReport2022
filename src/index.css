@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Futura'), url(./assets/fonts/FuturaNew/FuturaNewBook.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Futura';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Futura'), url(./assets/fonts/FuturaNew/FuturaNewBookOblique.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Futura'), url(./assets/fonts/FuturaNew/FuturaNewDemi.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Futura';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Futura'), url(./assets/fonts/FuturaNew/FuturaNewDemiOblique.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Futura'), url(./assets/fonts/FuturaNew/FuturaNewHeavy.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Futura';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Futura'), url(./assets/fonts/FuturaNew/FuturaNewHeavyOblique.otf) format('opentype');
+}
+
+@tailwind utilities;
