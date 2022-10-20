@@ -1,5 +1,5 @@
 import ReportDate from "./Components/ReportDate";
-import img1 from './assets/images/page1_img1.jpg'
+import img1 from './public/images/page1_img1.jpg'
 
 function App() {
 
