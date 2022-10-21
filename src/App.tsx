@@ -3,6 +3,8 @@ import ReportDate from "./Components/ReportDate";
 import img1 from '../public/images/page1_img1.jpg';
 import img2 from '../public/images/page1_img2.jpg';
 import img3 from '../public/images/page1_img3.jpg';
+import mip_logo from '../public/images/mip_logo.png';
+import icon_arrow_right from '../public/icons/icon_arrow_right.svg';
 
 export default function App() {
 
@@ -26,7 +28,7 @@ export default function App() {
                     </div>
                 </div>
                 <div className="flex flex-wrap bg-mosBlue-700">
-                    <div className="md:w-1/2 flex">
+                    <div className="md:w-1/2 flex order-2 md:order-1">
                         <div className="flex flex-1 justify-center items-center bg-mosBlue-100 p-2 text-right">
                             <p className="text-2xl text-mosBlue-700 uppercase">проектируем будущее,<br/>строим настоящее</p>
                         </div>
@@ -34,7 +36,18 @@ export default function App() {
                             <img src={img3} alt="" />
                         </div>
                     </div>
-                    <div><Link to={"report"}>Перейти в отчёт</Link></div>
+                    <div className="order-1 md:order-2 p-4 md:pt-0 md:pl-16">
+                        <Link to={"report"} className="uppercase flex">
+                            <span className="mr-2">Перейти в отчёт</span> <img src={icon_arrow_right} alt="" />
+                        </Link>
+                    </div>
+                </div>
+                <div className="flex flex-wrap bg-mosBlue-700">
+                    <div className="md:w-1/2 justify-center items-center p-6 md:p-24 bg-mosBlue-900">
+                        <img src={mip_logo} alt="" />
+                    </div>
+                    <div className="md:w-1/2 sm:p-4 md:pt-0 md:pl-16">
+                    </div>
                 </div>
 
             </div>
