@@ -6,7 +6,7 @@ import img3 from '../public/images/page1_img3.jpg';
 import mip_logo from '../public/images/mip_logo.png';
 import icon_arrow_right from '../public/icons/icon_arrow_right.svg';
 
-export default function App() {
+export default function FrontPage() {
 
     return (
         <div className="bg-mosBlue-900 h-full text-white">
@@ -37,7 +37,7 @@ export default function App() {
                         </div>
                     </div>
                     <div className="order-1 md:order-2 p-4 md:pt-0 md:pl-16">
-                        <Link to={"report"} className="uppercase flex">
+                        <Link to={"pages/1"} className="uppercase flex">
                             <span className="mr-2">Перейти в отчёт</span> <img src={icon_arrow_right} alt="" />
                         </Link>
                     </div>
