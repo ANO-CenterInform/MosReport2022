@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import ReportDate from "./Components/ReportDate";
-import img1 from '../public/images/page1_img1.jpg';
-import img2 from '../public/images/page1_img2.jpg';
-import img3 from '../public/images/page1_img3.jpg';
-import mip_logo from '../public/images/mip_logo.png';
-import icon_arrow_right from '../public/icons/icon_arrow_right.svg';
+import ReportDate from "../Components/ReportDate";
+import img1 from '../../public/images/page1_img1.jpg';
+import img2 from '../../public/images/page1_img2.jpg';
+import img3 from '../../public/images/page1_img3.jpg';
+import mip_logo from '../../public/images/mip_logo.png';
+import icon_arrow_right from '../../public/icons/icon_arrow_right.svg';
 
 export default function FrontPage() {
 
     return (
         <div className="bg-mosBlue-900 h-full text-white">
-            <div className="max-w-bootstrap mx-auto">
+            <div className="max-w-bootstrap-full mx-auto">
                 <div className="flex flex-wrap bg-mosBlue-700">
                     <div className="md:w-1/2 flex">
                         <div>

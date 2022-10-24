@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import FrontPage from './FrontPage'
-import Page_1 from './Pages/Page_1'
+import FrontPage from './Pages/FrontPage'
+import Page_1 from './Pages/Page1/Page_1'
 import './index.css'
 import {
     BrowserRouter as Router,

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './src/**/*.{html,js,jsx,tsx}'
@@ -12,16 +13,19 @@ module.exports = {
         mosBlue: {
           100: '#C0E0F7',
           700: '#0C4E98',
-          900: '#213b90',
+          900: '#1A3055',
         },
         mosRose: {
           500: '#EC4437',
         },
       },
       maxWidth: {
-        'bootstrap': '1140px',
+        'bootstrap-full': '1140px',
+        'bootstrap-md': '785px',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"),
+  ],
 }
