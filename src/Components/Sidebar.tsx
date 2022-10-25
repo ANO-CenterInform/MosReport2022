@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Transition } from '@headlessui/react'
 import mosLogo from '../../public/images/mip_logo.png';
+import { NavHashLink } from 'react-router-hash-link';
 
-export default function Sidebar() {
+type Links = {
+    name: string,
+    path: string,
+}
+
+type LinksProps = {
+    links: Links[];
+}
+
+export default function Sidebar({links}: LinksProps) {
     const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
@@ -20,7 +30,7 @@ export default function Sidebar() {
 
     return (
         <div>
-            <div className="flex h-full justify-center w-full md:left-0 md:top-0 md:w-28 2xl:w-44
+            <div className="flex flex-col h-full justify-start items-center w-full md:left-0 md:top-0 md:w-28 2xl:w-44
             py-4 md:pt-10 md:h-full color-white bg-mosBlue-900">
                 <button className="" onClick={() => setIsOpen(state => !state)}>
                     {!isOpen ? <div className="flex flex-col justify-center h-8 w-8 space-y-2"><div className="w-8 h-0.5 bg-white"></div>
@@ -34,6 +44,11 @@ export default function Sidebar() {
                         </svg>
                     }
                 </button>
+                <div className={'md:fixed md:pt-24 lg:pt-36'}>
+                    <ul>
+                        {links.map(link => <li className={'mb-8'} key={link.name}><NavHashLink className={'border-l p-2 border-white text-white opacity-50'} smooth to={`/pages/1${link.path}`}>{link.name}</NavHashLink></li>)}
+                    </ul>
+                </div>
             </div>
             <Transition
                 show={isOpen}
@@ -61,7 +76,7 @@ export default function Sidebar() {
                 </Transition.Child>
 
                 <div className='absolute sm:top-0 sm:left-0 md:ml-28 lg:ml-44 p-8 bg-mosBlue-700 text-white h-full w-full lg:w-44 z-40'>
-                    <div><img src={mosLogo} /> </div>
+                    <div><img src={mosLogo} /></div>
                 </div>
             </Transition>
         </div>
