@@ -32,7 +32,7 @@ export default function Page_1() {
                 <h1 className="px-8 mb-8 xl:pr-52 uppercase text-3xl text-mosBlue-700">обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</h1>
 
                 <div className="relative md:static lg:grid lg:grid-cols-[54px_215px_16px_215px_16px_215px_54px] 2xl:grid-cols-[100px_300px_22px_300px_22px_300px_100px]">
-                    <div></div>
+                    <div>{''}</div>
                     <div className="flex flex-col items-center"
                          data-aos="fade-up"
                          data-aos-delay="100"
@@ -44,7 +44,7 @@ export default function Page_1() {
                         </div>
                     </div>
                     <div className="md:hidden w-full bg-mosBlue-700 absolute h-[104px] top-[286px] -z-[1]"></div>
-                    <div></div>
+                    <div>{''}</div>
                     <div className="flex flex-col items-center bg-mosBlue-700 md:bg-white"
                          data-aos="fade-up"
                          data-aos-delay="200"
@@ -55,7 +55,7 @@ export default function Page_1() {
                             <p>Генеральный директор АО «Мосинжпроект»</p>
                         </div>
                     </div>
-                    <div></div>
+                    <div>{''}</div>
                     <div className="flex flex-col items-center bg-mosBlue-700 md:bg-white"
                          data-aos="fade-up"
                          data-aos-delay="300"
@@ -66,7 +66,7 @@ export default function Page_1() {
                             <p>Исполнительный директор по девелопменту АО «Мосинжпроект»</p>
                         </div>
                     </div>
-                    <div></div>
+                    <div>{''}</div>
                 </div>{/*Block end*/}
 
                 <div className="-mt-[152px] md:pt-[144px] 2xl:-mt-[104px] lg:pt-[154px] px-6 bg-mosBlue-700 text-white">
@@ -113,7 +113,7 @@ export default function Page_1() {
                     <div className="flex flex-1 justify-center items-center p-4 bg-mosBlue-700">
                         <p className="text-white text-lg md:text-xl 2xl:text-3xl uppercase text-center">помимо реализации программы развития метрополитена, «мосинжпроект» занимается:</p>
                     </div>
-                    <div className="flex-2 w-full bg-fit bg-[url('../../../public/images/page1_img4.jpg')]"></div>
+                    <div className="flex-2 w-full bg-fit bg-[url('../../../public/images/page1_img4.jpg')]">{''}</div>
                 </div>{/*Block end*/}
 
                 <div className={"py-8 px-12 mb-6"}>
