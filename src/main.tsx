@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import FrontPage from './Pages/FrontPage'
-import Page_1 from './Pages/Page1/Page_1'
+import Index from './Pages/Page1'
 import './index.css'
 import {
     BrowserRouter as Router,
@@ -17,7 +17,7 @@ ReactDOM.render(
         <Router>
             <Switch>
                 <Route exact path="/" component={FrontPage} />
-                <Route exact path="/pages/1" component={Page_1} />
+                <Route exact path="/pages/1" component={Index} />
             </Switch>
         </Router>
     </React.StrictMode>,

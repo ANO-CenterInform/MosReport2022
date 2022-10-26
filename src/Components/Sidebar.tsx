@@ -84,7 +84,7 @@ export default function Sidebar({links}: LinksProps) {
                     </div>
                 </Transition.Child>
 
-                <div className='absolute sm:top-0 sm:left-0 md:ml-28 lg:ml-44 p-8 bg-mosBlue-700 text-white h-full w-full lg:w-44 z-40'>
+                <div className='absolute sm:top-0 sm:left-0 md:ml-28 2xl:ml-44 p-8 bg-mosBlue-700 text-white h-full w-full lg:w-44 z-40'>
                     <div><img src={mosLogo} /></div>
                 </div>
             </Transition>
