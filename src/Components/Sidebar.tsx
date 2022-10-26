@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Transition } from '@headlessui/react'
 import mosLogo from '../../public/images/mip_logo.png';
-import { NavHashLink } from 'react-router-hash-link';
+import {HashLink, NavHashLink} from 'react-router-hash-link';
+import Accordion from "./Accordion";
 
 type Links = {
     name: string,
@@ -84,8 +85,17 @@ export default function Sidebar({links}: LinksProps) {
                     </div>
                 </Transition.Child>
 
-                <div className='absolute sm:top-0 sm:left-0 md:ml-28 2xl:ml-44 p-8 bg-mosBlue-700 text-white h-full w-full lg:w-44 z-40'>
-                    <div><img src={mosLogo} /></div>
+                <div className='absolute sm:top-0 sm:left-0 md:ml-28 2xl:ml-44 p-6 bg-mosBlue-700 text-white h-full w-full lg:w-96 z-40'>
+                    <div className={'mb-12'}><img src={mosLogo} /></div>
+                    <Accordion>
+                        <Accordion.Trigger><div className={'mb-4'}>обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</div></Accordion.Trigger>
+                        <Accordion.Content>
+                            <ul>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Обращение руководства АО «Мосинжпроект»</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Планы на будущее</NavHashLink></li>
+                            </ul>
+                        </Accordion.Content>
+                    </Accordion>
                 </div>
             </Transition>
         </div>

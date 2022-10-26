@@ -10,7 +10,7 @@ export default function FrontPage() {
 
     return (
         <div className="flex flex-col bg-mosBlue-900 h-screen text-white">
-            <div className="flex flex-wrap h-full md:flex-nowrap max-w-bootstrap-full mx-auto">
+            <div className="flex flex-wrap h-full 2xl:h-auto md:flex-nowrap max-w-bootstrap-full mx-auto">
                 <div className={'md:w-1/2 h-full flex flex-col order-2 md:order-1'}>
 
                     <div className="flex flex-wrap bg-mosBlue-700">
@@ -36,7 +36,7 @@ export default function FrontPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-1 justify-center items-center p-6 bg-mosBlue-900">
+                    <div className="flex flex-1 justify-center items-center p-6 2xl:py-12 bg-mosBlue-900">
                         <img src={mip_logo} alt="" />
                     </div>
 
