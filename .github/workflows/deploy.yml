@@ -2,7 +2,7 @@ name: deploy-to-staging
 run-name: ${{ github.actor }} is deploying to staging
 on: [push]
 jobs:
-  deploy_job:
+  deploy-job:
     runs-on: debian-latest
     name: build&deploy
     steps:
