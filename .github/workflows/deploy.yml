@@ -9,12 +9,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-          - name: Install Dependencies
+      - name: Install Dependencies
         run: yarn
                - name: Build
         run: yarn build
 
-          - name: deploy file to server
+      - name: deploy file to server
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: 'shamagir'
