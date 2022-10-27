@@ -18,6 +18,6 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
           username: 'shamagir'
-          server: '${{ secrets.SERVER_IP }}'
+          server: ${{ secrets.SERVER_IP }}
           ssh_private_key: ${{ secrets.SSH_PRIMARY_KEY }}
           remote_path: '/home/shamagir/sites/mosreport2022.shamagir.ru'
