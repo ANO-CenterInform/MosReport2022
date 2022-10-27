@@ -21,4 +21,4 @@ jobs:
           server: ${{ secrets.SERVER_IP }}
           password: ${{secrets.SERVER_PWD}}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          remote_path: 'sites/mosreport2022.shamagir.ru'
+          remote_path: '/home/shamagir/sites/mosreport2022.shamagir.ru'
