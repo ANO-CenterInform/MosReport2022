@@ -11,7 +11,8 @@ jobs:
 
       - name: Install Dependencies
         run: yarn
-               - name: Build
+
+     - name: Build
         run: yarn build
 
       - name: deploy file to server
