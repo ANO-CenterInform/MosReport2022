@@ -1,10 +1,14 @@
 import React, { useState, useContext, Fragment } from 'react';
 import { Transition } from '@headlessui/react';
 
-const AccordionContext = React.createContext('');
+const AccordionContext = React.createContext({
+    open: false,
+    setOpen: (open: boolean) => {},
+    toggleOpen: () => {}
+});
 
 type AccordionTypes = {
-    children: string
+    children: JSX.Element[],
 }
 
 const Accordion = ({ children }: AccordionTypes) => {
@@ -15,13 +19,18 @@ const Accordion = ({ children }: AccordionTypes) => {
     };
 
     return (
+
         <AccordionContext.Provider value={{ open, setOpen, toggleOpen }}>
             <>{children}</>
         </AccordionContext.Provider>
     );
 };
 
-const Trigger = ({ children }) => {
+type TriggerTypes = {
+    children: JSX.Element,
+}
+const Trigger = ({ children }: TriggerTypes) => {
+
     const { open, toggleOpen } = useContext(AccordionContext);
 
     return (
@@ -32,7 +41,11 @@ const Trigger = ({ children }) => {
     );
 };
 
-const Content = ({children}) => {
+type ContentTypes = {
+    children: JSX.Element,
+}
+const Content = ({children}: ContentTypes) => {
+
     const { open, toggleOpen } = useContext(AccordionContext);
 
     return (

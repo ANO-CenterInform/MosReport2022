@@ -4,6 +4,7 @@ import man3 from "../../../public/images/page1_man3.jpg";
 import icon_metro from "../../../public/icons/icon_metro.svg";
 import icon_train from "../../../public/icons/icon_train.svg";
 import icon_builder from "../../../public/icons/icon_builder.svg";
+import img4 from "../../../public/images/page1_img4.jpg";
 import img5 from "../../../public/images/page1_img5.jpg";
 import img6 from "../../../public/images/page1_img6.jpg";
 import img7 from "../../../public/images/page1_img7.jpg";
@@ -15,6 +16,7 @@ import img12 from "../../../public/images/page1_img12.jpg";
 import icon_project from "../../../public/icons/icon_project.svg";
 
 export default function Section1() {
+
     return (
         <section className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
             <h1 id={'first'} className="px-8 mb-8 xl:pr-52 uppercase text-3xl text-mosBlue-700">обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</h1>
@@ -101,7 +103,7 @@ export default function Section1() {
                 <div className="flex flex-1 justify-center items-center p-4 bg-mosBlue-700">
                     <p className="text-white text-lg md:text-xl 2xl:text-3xl uppercase text-center">помимо реализации программы развития метрополитена, «мосинжпроект» занимается:</p>
                 </div>
-                <div className="flex-2 w-full bg-fit bg-[url('../../../public/images/page1_img4.jpg')]">{''}</div>
+                <div className={`w-full lg:w-[751px]`}><img src={img4} alt={''}/></div>
             </div>{/*Block end*/}
 
             <div className={"py-8 px-12 mb-6"}>

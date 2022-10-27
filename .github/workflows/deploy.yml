@@ -1,0 +1,28 @@
+name: deploy-to-staging
+run-name: ${{ github.actor }} is deploying to staging
+
+on: [push]
+
+jobs:
+  deploy_job:
+  runs-on: debian-latest
+  name: build&deploy
+  steps:
+    # To use this repository's private action, you must check out the repository
+    - name: Checkout
+    uses: actions/checkout@v2
+
+      - name: Install Dependencies
+    run: yarn
+      - name: Build
+    run: yarn build
+
+      - name: deploy file to server
+    uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+    with:
+      username: 'shamagir'
+      server: '188.68.217.156'
+      ssh_private_key: ${{ secrets.SSH_PRIMARY_KEY }}
+      local_path: './build/*'
+      remote_path: '/home/shamagir/sites/mosreport2022.shamagir.ru'
+      sftpArgs: '-o ConnectTimeout=5'
