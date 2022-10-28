@@ -14,6 +14,7 @@ import img10 from "../../../public/images/page1_img10.jpg";
 import img11 from "../../../public/images/page1_img11.jpg";
 import img12 from "../../../public/images/page1_img12.jpg";
 import icon_project from "../../../public/icons/icon_project.svg";
+import PersonCard from "../../Components/PersonCard";
 
 export default function Section1() {
 
@@ -23,38 +24,26 @@ export default function Section1() {
 
             <div className="relative md:static lg:grid lg:grid-cols-[54px_215px_16px_215px_16px_215px_54px] 2xl:grid-cols-[100px_300px_22px_300px_22px_300px_100px]">
                 <div>{''}</div>
-                <div className="flex flex-col items-center"
-                     data-aos="fade-up"
-                     data-aos-delay="100"
-                     data-aos-anchor-placement="top-bottom">
-                    <div className="flex justify-center"><img src={man1} alt=""/></div>
-                    <div className="flex-1 p-4 bg-mosRose-500 text-white text-center max-w-[300px]">
-                        <p className="font-bold">Газизуллин Марс Мулланурович</p>
-                        <p>Председатель совета директоров АО «Мосинжпроект»</p>
-                    </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <PersonCard
+                        image={man1}
+                        name={'Газизуллин Марс Мулланурович'}
+                        job={'Председатель совета директоров АО «Мосинжпроект»'} />
                 </div>
                 <div className="md:hidden w-full bg-mosBlue-700 absolute h-[104px] top-[286px] -z-[1]"></div>
                 <div>{''}</div>
-                <div className="flex flex-col items-center bg-mosBlue-700 md:bg-white"
-                     data-aos="fade-up"
-                     data-aos-delay="200"
-                     data-aos-anchor-placement="top-bottom">
-                    <div className="flex justify-center"><img src={man2} alt=""/></div>
-                    <div className="flex-1 p-4 bg-mosRose-500 text-white text-center max-w-[300px]">
-                        <p className="font-bold">Кравцов Юрий Николаевич</p>
-                        <p>Генеральный директор АО «Мосинжпроект»</p>
-                    </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <PersonCard
+                        image={man2}
+                        name={'Кравцов Юрий Николаевич'}
+                        job={'Генеральный директор АО «Мосинжпроект»'} />
                 </div>
                 <div>{''}</div>
-                <div className="flex flex-col items-center bg-mosBlue-700 md:bg-white"
-                     data-aos="fade-up"
-                     data-aos-delay="300"
-                     data-aos-anchor-placement="top-bottom">
-                    <div className="flex justify-center"><img src={man3} alt=""/></div>
-                    <div className="flex-1 p-4 bg-mosRose-500 text-white text-center max-w-[300px]">
-                        <p className="font-bold">Суниев Альберт Альфатович</p>
-                        <p>Исполнительный директор по девелопменту АО «Мосинжпроект»</p>
-                    </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <PersonCard
+                        image={man3}
+                        name={'Суниев Альберт Альфатович'}
+                        job={'Исполнительный директор по девелопменту АО «Мосинжпроект»'} />
                 </div>
                 <div>{''}</div>
             </div>{/*Block end*/}
