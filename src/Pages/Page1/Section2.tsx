@@ -1,5 +1,5 @@
-import img1 from '../../../public/images/page1_screen2_img1.jpg';
-import img2 from '../../../public/images/page1_screen2_img2.jpg';
+import img1 from '../../../src/images/page1_screen2_img1.jpg';
+import img2 from '../../../src/images/page1_screen2_img2.jpg';
 import Quote from "../../Components/Quote";
 
 export default function Section2() {

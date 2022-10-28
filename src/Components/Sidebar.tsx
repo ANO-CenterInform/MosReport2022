@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Transition } from '@headlessui/react'
-import mosLogo from '../../public/images/mip_logo.png';
+import mosLogo from '../../src/images/mip_logo.png';
 import {NavHashLink} from 'react-router-hash-link';
 import Accordion from "./Accordion";
 

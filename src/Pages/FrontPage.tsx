@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import ReportDate from "../Components/ReportDate";
-import img1 from '../../public/images/page1_img1.jpg';
-import img2 from '../../public/images/page1_img2.jpg';
-import img3 from '../../public/images/page1_img3.jpg';
-import mip_logo from '../../public/images/mip_logo.png';
-import icon_arrow_right from '../../public/icons/icon_arrow_right.svg';
+// @ts-ignore
+import img1 from '../../src/images/page1_img1.jpg?webp&srset';
+// @ts-ignore
+import img2 from '../../src/images/page1_img2.jpg?webp&srset';
+// @ts-ignore
+import img3 from '../../src/images/page1_img3.jpg?webp&srset';
+// @ts-ignore
+import mip_logo from '../../src/images/mip_logo.png?webp';
+import icon_arrow_right from '../../src/icons/icon_arrow_right.svg';
 
 export default function FrontPage() {
 
