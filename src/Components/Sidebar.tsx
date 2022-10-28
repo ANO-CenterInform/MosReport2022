@@ -10,10 +10,11 @@ type Links = {
 }
 
 type LinksProps = {
+    pageId: number;
     links: Links[];
 }
 
-export default function Sidebar({links}: LinksProps) {
+export default function Sidebar({pageId, links}: LinksProps) {
     const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
@@ -30,7 +31,7 @@ export default function Sidebar({links}: LinksProps) {
     }, [isOpen]);
 
     return (
-        <div>
+        <aside>
             <div className="flex flex-col h-full justify-start items-center w-full md:left-0 md:top-0 md:w-28 2xl:w-44
             py-4 md:pt-10 md:h-full color-white bg-mosBlue-900">
                 <button className={'z-40'} onClick={() => setIsOpen(state => !state)}>
@@ -52,7 +53,7 @@ export default function Sidebar({links}: LinksProps) {
                                 <NavHashLink
                                     className={'border-l p-2 border-white text-white opacity-50'}
                                     smooth
-                                    to={`/pages/1${link.path}`}
+                                    to={`/pages/${pageId}${link.path}`}
                                     activeStyle={{ opacity: '100' }}>
                                     {link.name}
                                 </NavHashLink>
@@ -98,6 +99,6 @@ export default function Sidebar({links}: LinksProps) {
                     </Accordion>
                 </div>
             </Transition>
-        </div>
+        </aside>
     );
 }

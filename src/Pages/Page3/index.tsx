@@ -19,10 +19,10 @@ export default function Index() {
 
     return (
         <section className="relative grid sm:grid-cols-[7rem_1fr]">
-            <Sidebar pageId={1} links={pageLinks}/>
+            <Sidebar pageId={3} links={pageLinks}/>
             <main>
                 <Section1 />
-                <Section2 />
+                {<Section2 />}
             </main>
         </section>
     )
