@@ -9,9 +9,9 @@ import icon_arrow_right from '../../public/icons/icon_arrow_right.svg';
 export default function FrontPage() {
 
     return (
-        <div className="flex flex-col bg-mosBlue-900 h-screen text-white">
+        <div className="flex flex-col justify-center bg-mosBlue-900 h-screen text-white">
             <div className="flex flex-wrap h-full 2xl:h-auto md:flex-nowrap max-w-bootstrap-full mx-auto">
-                <div className={'md:w-1/2 h-full flex flex-col order-2 md:order-1'}>
+                <div className={'lg:w-1/2 h-full flex flex-col order-2 md:order-1'}>
 
                     <div className="flex flex-wrap bg-mosBlue-700">
                         <div className="flex w-full">
@@ -41,7 +41,7 @@ export default function FrontPage() {
                     </div>
 
                 </div>
-                <div className={'flex flex-col md:h-full w-full md:w-1/2 order-1 md:order-2 bg-mosBlue-700 md:pt-[230px]'}>
+                <div className={'flex flex-col md:h-full w-full lg:w-1/2 order-1 md:order-2 bg-mosBlue-700 md:pt-[230px]'}>
 
                     <div className="p-4 md:pl-16 mb-8">
                         <p className="text-6xl md:text-7xl font-bold uppercase md:leading-tight">Годовой<br/> отчет</p>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Transition } from '@headlessui/react'
 import mosLogo from '../../public/images/mip_logo.png';
-import {HashLink, NavHashLink} from 'react-router-hash-link';
+import {NavHashLink} from 'react-router-hash-link';
 import Accordion from "./Accordion";
 
 type Links = {
@@ -45,7 +45,7 @@ export default function Sidebar({links}: LinksProps) {
                         </svg>
                     }
                 </button>
-                <div className={'md:fixed md:pt-24 lg:pt-36'}>
+                <div className={'max-md:hidden md:fixed md:pt-24 lg:pt-36'}>
                     <ul>
                         {links.map(link =>
                             <li className={'mb-8'} key={link.name}>
