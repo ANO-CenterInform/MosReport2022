@@ -19,9 +19,7 @@ jobs:
         with:
           username: 'shamagir'
           server: ${{ secrets.SERVER_IP }}
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.SERVER_PWD }}
           local_path: './dist/*'
           remote_path: '/home/shamagir/sites/mosreport2022.shamagir.ru'
-          delete_remote_files: true
-          sftp_only: true
           sftpArgs: '-o ConnectTimeout=5 -o StrictHostKeyChecking=no'
