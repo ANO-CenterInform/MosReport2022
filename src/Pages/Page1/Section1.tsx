@@ -167,7 +167,7 @@ export default function Section1() {
             <div className={'flex flex-col lg:flex-row flex-wrap lg:flex-nowrap bg-neutral-100 p-6 md:mb-8 justify-center gap-6'}>
                 <div className={'text-right flex-1'}>
                     <p className={'text-sm'}>более</p>
-                    <p className={'text-9xl text-mosBlue-700 font-bold'}><Counter min={0} max={60} className={''} /></p>
+                    <p className={'text-9xl text-mosBlue-700 font-bold'} data-aos="fade-right" data-aos-delay="100"><Counter min={0} max={60} className={''} /></p>
                     <p className={'text-4xl text-mosBlue-700 font-bold'}>проектных компаний (SPV)</p>
                 </div>
                 <div className={'flex-1'}>
