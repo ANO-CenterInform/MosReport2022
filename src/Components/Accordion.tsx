@@ -12,7 +12,7 @@ type AccordionTypes = {
 }
 
 const Accordion = ({ children }: AccordionTypes) => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const toggleOpen = () => {
         setOpen((previousState) => !previousState);

@@ -3,6 +3,7 @@ import { Transition } from '@headlessui/react'
 import mosLogo from '../../src/images/mip_logo.png';
 import {NavHashLink} from 'react-router-hash-link';
 import Accordion from "./Accordion";
+import Picture from "./Picture";
 
 type Links = {
     name: string,
@@ -87,13 +88,24 @@ export default function Sidebar({pageId, links}: LinksProps) {
                 </Transition.Child>
 
                 <div className='absolute sm:top-0 sm:left-0 md:ml-28 2xl:ml-44 p-6 bg-mosBlue-700 text-white h-full w-full lg:w-96 z-40'>
-                    <div className={'mb-12'}><img src={mosLogo} /></div>
+                    <div className={'mb-12'}><Picture img={mosLogo} /></div>
                     <Accordion>
                         <Accordion.Trigger><div className={'mb-4'}>обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
                                 <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Обращение руководства АО «Мосинжпроект»</NavHashLink></li>
                                 <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Планы на будущее</NavHashLink></li>
+                            </ul>
+                        </Accordion.Content>
+                    </Accordion>
+                    <Accordion>
+                        <Accordion.Trigger><div className={'mb-4'}>общие сведения, положение акционерного общества в отрасли</div></Accordion.Trigger>
+                        <Accordion.Content>
+                            <ul>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#forth'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>04. Информация о существенных фактах за отчетный период</NavHashLink></li>
                             </ul>
                         </Accordion.Content>
                     </Accordion>

@@ -1,26 +1,25 @@
 import {useEffect, useState, useRef} from "react";
-import { useInView } from 'react-intersection-observer';
+import useOnScreen from "../hooks/useOnScreen";
 
 type CounterTypes = {
     min: number,
     max: number,
-    className: string
+    speed?: number,
+    className?: string
 }
 
-export default function Counter({min, max, className}: CounterTypes) {
+export default function Counter({min, max, speed, className}: CounterTypes) {
 
     let timer: string | number | boolean | NodeJS.Timeout | undefined;
     const [counter, setCounter] = useState(min);
 
-    const { ref, inView } = useInView({
-        triggerOnce: true,
-        rootMargin: '-100px 0px',
-    });
+    const elementRef = useRef<HTMLDivElement>(null);
+    const isOnScreen = useOnScreen(elementRef);
 
     const updateCount = () => {
         timer = !timer && setInterval(() => {
                 setCounter(prevCount => prevCount + 1)
-        }, 1000 / max)
+        }, speed ? speed : 1000 / max)
 
         if (counter == max) {
             // @ts-ignore
@@ -29,18 +28,17 @@ export default function Counter({min, max, className}: CounterTypes) {
     }
 
     useEffect(() => {
-        if(inView) {
+        if(isOnScreen) {
             updateCount();
         } else {
             setCounter(min)
-            console.log(counter)
         }
         // @ts-ignore
         return () => clearInterval(timer)
     });
 
     return (
-        <span className={className} ref={ref}>
+        <span className={className} ref={elementRef}>
             {counter}
         </span>
     )

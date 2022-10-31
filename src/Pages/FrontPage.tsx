@@ -6,8 +6,15 @@ import img3 from '../../src/images/page1_img3.jpg';
 import mip_logo from '../../src/images/mip_logo.png';
 import Picture from "../Components/Picture";
 import icon_arrow_right from '../../src/icons/icon_arrow_right.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {useEffect} from "react";
 
 export default function FrontPage() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     return (
         <div className="flex flex-col justify-center bg-mosBlue-900 h-screen text-white">
@@ -16,33 +23,35 @@ export default function FrontPage() {
 
                     <div className="flex flex-wrap bg-mosBlue-700">
                         <div className="flex w-full">
-                            <div>
+                            <div data-aos="fade-right">
                                 <Picture img={img1} alt={''} />
                             </div>
-                            <div className="flex flex-1 justify-center items-center bg-mosRose-500 p-2">
+                            <div className="flex flex-1 justify-center items-center bg-mosRose-500 p-2" data-aos="fade-right">
                                 <ReportDate classes="text-7xl md:text-8xl font-bold" year={2022} />
                             </div>
                         </div>
                     </div>
 
-                    <div><Picture img={img2} alt={''} /></div>
+                    <div data-aos="fade-in" data-aos-delay={"100"}><Picture img={img2} alt={''} /></div>
 
                     <div className="flex flex-wrap bg-mosBlue-700">
                         <div className="flex order-2 md:order-1">
-                            <div className="flex flex-1 justify-center items-center bg-mosBlue-100 p-2 text-right">
+                            <div className="flex flex-1 justify-center items-center bg-mosBlue-100 p-2 text-right" data-aos="fade-in" data-aos-delay={"200"}>
                                 <p className="text-2xl text-center text-mosBlue-700 uppercase">проектируем будущее,<br/>строим настоящее</p>
                             </div>
-                            <div>
+                            <div data-aos="fade-right" data-aos-delay={"200"}>
                                 <Picture img={img3} alt={''} />
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-1 justify-center items-center p-6 2xl:py-12 bg-mosBlue-900">
+                    <div className="flex flex-1 justify-center items-center p-6 2xl:py-12 bg-mosBlue-900"
+                         data-aos="fade-up" data-aos-delay={"300"}>
                         <Picture img={mip_logo} alt={''} />
                     </div>
 
                 </div>
-                <div className={'flex flex-col md:h-full w-full lg:w-1/2 order-1 md:order-2 bg-mosBlue-700 md:pt-[230px]'}>
+                <div className={'flex flex-col md:h-full w-full lg:w-1/2 order-1 md:order-2 bg-mosBlue-700 md:pt-[230px]'}
+                     data-aos="fade-left" data-aos-delay={"500"}>
 
                     <div className="p-4 md:pl-16 mb-8">
                         <p className="text-6xl md:text-7xl font-bold uppercase md:leading-tight">Годовой<br/> отчет</p>
