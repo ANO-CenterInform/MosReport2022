@@ -13,6 +13,7 @@ import img9 from "../../../src/images/page1_img9.jpg";
 import img10 from "../../../src/images/page1_img10.jpg";
 import img11 from "../../../src/images/page1_img11.jpg";
 import img12 from "../../../src/images/page1_img12.jpg";
+import Picture from "../../Components/Picture";
 import icon_project from "../../../src/icons/icon_project.svg";
 import PersonCard from "../../Components/PersonCard";
 
@@ -92,7 +93,7 @@ export default function Section1() {
                 <div className="flex flex-1 justify-center items-center max-md:p-12 max-md:border-[35px] border-white p-4 bg-mosBlue-700">
                     <p className="text-white text-lg md:text-xl 2xl:text-3xl uppercase text-center">помимо реализации программы развития метрополитена, «мосинжпроект» занимается:</p>
                 </div>
-                <div className={`w-full lg:w-[751px]`}><img src={img4} alt={''}/></div>
+                <div className={`w-full lg:w-[751px]`}><Picture img={img4}  alt={''} /></div>
             </div>{/*Block end*/}
 
             <div className={"py-8 px-12 md:mb-6"}>
@@ -101,13 +102,13 @@ export default function Section1() {
 
             <div className={"flex flex-wrap md:mb-8 md:flex-nowrap md:gap-[30px]"}>
                 <div className={"flex flex-col xl:basis-[752px]"}>
-                    <div><img src={img5} alt="" /></div>
+                    <div><Picture img={img5}  alt={''} /></div>
                     <div className={"p-8 bg-neutral-100  flex-1"}>
                         <p>Дорожным строительством в зоне жилой застройки в северной и южной частях промзоны «ЗИЛ». Так, на ЗИЛе строится мост длиной более 600 метров через затон Новинки. Вместе с прилегающей улично-дорожной сетью он обеспечит транспортную доступность новых жилых кварталов на территории бывшей промзоны и свяжет строящуюся Симоновскую набережную с районом Южнопортовый. Это позволит разгрузить Третье транспортное кольцо (ТТК), Варшавское шоссе и проспект Андропова.</p>
                     </div>
                 </div>
                 <div className="flex flex-col xl:basis-[359px] max-md:border-[35px] border-white">
-                    <div><img src={img6} alt="" className={'mx-auto'} /></div>
+                    <div><Picture img={img6}  alt={''} className={'mx-auto'} /></div>
                     <div className={"p-8 bg-mosRose-500 text-white flex items-center justify-center flex-1"}>
                         <p className={'text-center'}>Развитием транспортной сети в административно-деловом центре «Коммунарка» в Новой Москве.</p>
                     </div>
@@ -115,10 +116,10 @@ export default function Section1() {
             </div>{/*Block end*/}
 
             <div className={'relative md:mb-8'}>
-                <div><img src={img7} alt={''}/></div>
+                <div><Picture img={img7}  alt={''} /></div>
                 <div className={'p-8 bg-neutral-100 flex max-md:flex-col flex-wrap lg:flex-nowrap'}>
                     <div className={'max-md:order-2 lg:absolute lg:bottom-0 lg:left-0 lg:w-[376px] lg:border-r-[35px] lg:border-t-[35px] border-white'}>
-                        <div><img src={img8} alt={''}/></div>
+                        <div><Picture img={img8}  alt={''} /></div>
                         <div className={'p-6 bg-mosBlue-700 text-white text-center'}>
                             Строительством многофункционального комплекса «Мнёвники».
                         </div>
@@ -128,9 +129,9 @@ export default function Section1() {
             </div>{/*Block end*/}
 
             <div className={'md:mb-8'}>
-                <div><img src={img9} alt={''}/></div>
+                <div><Picture img={img9}  alt={''} /></div>
                 <div className={'p-8 bg-neutral-100 flex flex-wrap max-md:flex-col  lg:flex-nowrap'}>
-                    <img className={'max-md:order-2'} src={img10} alt={''}/>
+                    <div className={'shrink-0'}><Picture img={img10}  alt={''} className={'max-md:order-2'} /></div>
                     <p className={'max-md:order-1 md:pl-8 max-md:mb-8'}>Строительством уникального, знакового для России объекта «Национальный космический центр», который станет одним из крупнейших в мире космических центров. Площадь объектов превысит 250 тыс. кв. метров. Высотной доминантой комплекса зданий будет 288-метровая башня со шпилем. Именно на строительстве Национального космического центра тестируются и внедряются новые технологии на разных этапах строительного производства, охраны труда, промышленной безопасности.</p>
                 </div>
             </div>{/*Block end*/}
@@ -153,7 +154,7 @@ export default function Section1() {
                 </div> {/*Block end*/}
 
                 <div className={'flex flex-col justify-between md:mb-8'}>
-                    <div className={'max-md:order-2 max-md:px-8'}><img src={img12} alt={''} /></div>
+                    <div className={'max-md:order-2 max-md:px-8'}><Picture img={img12}  alt={''} /></div>
                     <div className={'p-6 max-md:order-1 max-md:px-8 max-md:pt-0'}>
                         <ul>
                             <li className={'list-disc list-outside'}>серфинг-парк «Волна» – крупномасштабный проект комплексного освоения территорий Мневниковской поймы, архитектурная концепция которого разработана крупным международным архитектурным бюро Werner Sobek. Проект включен в Адресную инвестиционную программу города Москвы на 2021-2024 годы.</li>

@@ -1,13 +1,14 @@
 import img1 from '../../../src/images/page1_screen2_img1.jpg';
 import img2 from '../../../src/images/page1_screen2_img2.jpg';
 import Quote from "../../Components/Quote";
+import Picture from "../../Components/Picture";
 
 export default function Section2() {
     return (
         <section className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
             <h1 id={'second'} className="px-8 mb-8 xl:px-0 uppercase text-3xl text-mosBlue-700">планы на будущее</h1>
             <div className={'mb-8'}>
-                <img src={img1} alt={''} />
+                <Picture img={img1} alt={''} />
             </div>
             <div className={'mb-8 flex flex-wrap md:flex-nowrap md:gap-6 lg:gap-8'}>
                 <div className={'lg:w-1/2 max-md:px-8'}>

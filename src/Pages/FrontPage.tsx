@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 import ReportDate from "../Components/ReportDate";
-// @ts-ignore
-import img1 from '../../src/images/page1_img1.jpg?webp&srset';
-// @ts-ignore
-import img2 from '../../src/images/page1_img2.jpg?webp&srset';
-// @ts-ignore
-import img3 from '../../src/images/page1_img3.jpg?webp&srset';
-// @ts-ignore
-import mip_logo from '../../src/images/mip_logo.png?webp';
+import img1 from '../../src/images/page1_img1.jpg';
+import img2 from '../../src/images/page1_img2.jpg';
+import img3 from '../../src/images/page1_img3.jpg';
+import mip_logo from '../../src/images/mip_logo.png';
+import Picture from "../Components/Picture";
 import icon_arrow_right from '../../src/icons/icon_arrow_right.svg';
 
 export default function FrontPage() {
@@ -20,7 +17,7 @@ export default function FrontPage() {
                     <div className="flex flex-wrap bg-mosBlue-700">
                         <div className="flex w-full">
                             <div>
-                                <img src={img1} alt="" />
+                                <Picture img={img1} alt={''} />
                             </div>
                             <div className="flex flex-1 justify-center items-center bg-mosRose-500 p-2">
                                 <ReportDate classes="text-7xl md:text-8xl font-bold" year={2022} />
@@ -28,7 +25,7 @@ export default function FrontPage() {
                         </div>
                     </div>
 
-                    <div><img src={img2} alt="" /></div>
+                    <div><Picture img={img2} alt={''} /></div>
 
                     <div className="flex flex-wrap bg-mosBlue-700">
                         <div className="flex order-2 md:order-1">
@@ -36,12 +33,12 @@ export default function FrontPage() {
                                 <p className="text-2xl text-center text-mosBlue-700 uppercase">проектируем будущее,<br/>строим настоящее</p>
                             </div>
                             <div>
-                                <img src={img3} alt="" />
+                                <Picture img={img3} alt={''} />
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-1 justify-center items-center p-6 2xl:py-12 bg-mosBlue-900">
-                        <img src={mip_logo} alt="" />
+                        <Picture img={mip_logo} alt={''} />
                     </div>
 
                 </div>
