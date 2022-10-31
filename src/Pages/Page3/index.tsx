@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import {useEffect} from "react";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
+import Section3 from "./Section3";
 
 export default function Index() {
 
@@ -22,7 +23,8 @@ export default function Index() {
             <Sidebar pageId={3} links={pageLinks}/>
             <main>
                 <Section1 />
-                {<Section2 />}
+                <Section2 />
+                <Section3 />
             </main>
         </section>
     )

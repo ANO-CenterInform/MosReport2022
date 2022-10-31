@@ -16,6 +16,7 @@ import img12 from "../../../src/images/page1_img12.jpg";
 import Picture from "../../Components/Picture";
 import icon_project from "../../../src/icons/icon_project.svg";
 import PersonCard from "../../Components/PersonCard";
+import Counter from "../../Components/Couter";
 
 export default function Section1() {
 
@@ -166,7 +167,7 @@ export default function Section1() {
             <div className={'flex flex-col lg:flex-row flex-wrap lg:flex-nowrap bg-neutral-100 p-6 md:mb-8 justify-center gap-6'}>
                 <div className={'text-right flex-1'}>
                     <p className={'text-sm'}>более</p>
-                    <p className={'text-9xl text-mosBlue-700 font-bold'}>60</p>
+                    <p className={'text-9xl text-mosBlue-700 font-bold'}><Counter min={0} max={60} className={''} /></p>
                     <p className={'text-4xl text-mosBlue-700 font-bold'}>проектных компаний (SPV)</p>
                 </div>
                 <div className={'flex-1'}>
