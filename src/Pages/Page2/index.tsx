@@ -2,9 +2,6 @@ import Sidebar from '../../Components/Sidebar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect} from "react";
-import Section1 from "./Section1";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
 import Footer from "../../Components/Footer";
 
 export default function Index() {
@@ -22,15 +19,13 @@ export default function Index() {
     return (
         <>
             <section className="relative grid sm:grid-cols-[7rem_1fr]">
-                <Sidebar pageId={1} links={pageLinks}/>
+                <Sidebar pageId={2} links={pageLinks}/>
                 <main>
-                    <Section1 />
-                    <Section2 />
-                    <Section3 />
+                    Page 2
                 </main>
             </section>
 
-            <Footer prev={'/'} next={'/pages/2'} />
+            <Footer prev={'/pages/2'} next={'/pages/3'} />
         </>
     )
 }
