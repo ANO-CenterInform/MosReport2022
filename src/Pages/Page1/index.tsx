@@ -1,11 +1,13 @@
-import Sidebar from '../../Components/Sidebar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {useEffect} from "react";
-import Section1 from "./Section1";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
-import Footer from "../../Components/Footer";
+import React, {useEffect, Suspense} from "react";
+
+const Sidebar = React.lazy(() => import('../../Components/Sidebar'));
+const Section1 = React.lazy(() => import('./Section1'));
+const Section2 = React.lazy(() => import('./Section2'));
+const Section3 = React.lazy(() => import('./Section3'));
+const Footer = React.lazy(() => import('../../Components/Footer'));
+
 
 export default function Index() {
 
@@ -22,15 +24,27 @@ export default function Index() {
     return (
         <>
             <section className="relative grid sm:grid-cols-[7rem_1fr]">
-                <Sidebar pageId={1} links={pageLinks}/>
+                <Suspense fallback={<div>Загрузка</div>}>
+                    <Sidebar pageId={1} links={pageLinks}/>
+                </Suspense>
+
                 <main>
-                    <Section1 />
-                    <Section2 />
-                    <Section3 />
+                    <Suspense fallback={<div className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10 text-center">Загрузка...</div>}>
+                        <Section1 />
+                    </Suspense>
+
+                    <Suspense fallback={<div className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10 text-center">Загрузка...</div>}>
+                        <Section2 />
+                    </Suspense>
+
+                    <Suspense fallback={<div className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10 text-center">Загрузка...</div>}>
+                        <Section3 />
+                    </Suspense>
                 </main>
             </section>
-
-            <Footer prev={'/'} next={'/pages/2'} />
+            <Suspense fallback={<div>Загрузка</div>}>
+                <Footer prev={'/'} next={'/pages/2'} />
+            </Suspense>
         </>
     )
 }
