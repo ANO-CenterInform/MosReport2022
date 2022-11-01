@@ -21,8 +21,8 @@ import Counter from "../../Components/Couter";
 export default function Section1() {
 
     return (
-        <section className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
-            <h1 id={'first'} className="px-8 mb-8 xl:pr-52 uppercase text-3xl text-mosBlue-700">обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</h1>
+        <section id={'first'} className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
+            <h1 className="px-8 mb-8 xl:pr-52 uppercase text-3xl text-mosBlue-700">обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</h1>
 
             <div className="relative md:static lg:grid lg:grid-cols-[54px_215px_16px_215px_16px_215px_54px] 2xl:grid-cols-[100px_300px_22px_300px_22px_300px_100px]">
                 <div>{''}</div>

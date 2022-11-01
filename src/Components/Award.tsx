@@ -15,7 +15,7 @@ export default function Award({title, img, awardName, rating, className}: AwardT
             <div className={'mb-4'}><Picture img={img} alt={''} /></div>
             {(awardName || rating) &&
             <div className={'w-full'}>
-                {awardName && <p className={'mb-4 text-mosBlue-700 font-bold'}>{awardName}</p>}
+                {awardName && <p className={'mb-4 w-full text-center text-mosBlue-700 font-bold'}>{awardName}</p>}
                 {rating && <div className={'p-2 text-center bg-mosRose-500 text-white'}>{rating}</div>}
             </div>
             }

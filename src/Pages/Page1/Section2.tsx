@@ -5,8 +5,8 @@ import Picture from "../../Components/Picture";
 
 export default function Section2() {
     return (
-        <section className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
-            <h1 id={'second'} className="px-8 mb-8 xl:px-0 uppercase text-3xl text-mosBlue-700">планы на будущее</h1>
+        <section id={'second'} className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
+            <h2 className="px-8 mb-8 xl:px-0 uppercase text-3xl text-mosBlue-700">планы на будущее</h2>
             <div className={'mb-8'}>
                 <Picture img={img1} alt={''} />
             </div>

@@ -95,6 +95,9 @@ export default function Sidebar({pageId, links}: LinksProps) {
                             <ul>
                                 <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Обращение руководства АО «Мосинжпроект»</NavHashLink></li>
                                 <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Планы на будущее</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>03. Награды и достижения</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>04. Конкурсы АО «Мосинжпроект»</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#fith'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>05. Задачи, стоящие перед АО «Мосинжпроект» в следующем году</NavHashLink></li>
                             </ul>
                         </Accordion.Content>
                     </Accordion>
