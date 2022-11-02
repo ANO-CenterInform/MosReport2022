@@ -1,7 +1,7 @@
 export default function Section2() {
     return (
-        <section className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full lg:h-screen lg:flex lg:flex-col lg:justify-center mx-auto pt-10">
-            <h1 id={'second'} className="max-md:px-8 mb-6 xl:w-2/3 uppercase text-3xl text-mosBlue-700">Организационная структура</h1>
+        <section id={'second'} className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full lg:h-screen lg:flex lg:flex-col lg:justify-center mx-auto pt-10">
+            <h1 className="max-md:px-8 mb-6 xl:w-2/3 uppercase text-3xl text-mosBlue-700">Организационная структура</h1>
 
             <div className={'flex flex-col md:flex-row max-md:px-8 md:gap-8'}>
                 <div className={'md:w-1/2'}>

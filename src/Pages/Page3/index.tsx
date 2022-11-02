@@ -17,7 +17,8 @@ export default function Index() {
         { "name": '01', "path": "#first" },
         { "name": '02', "path": "#second" },
         { "name": '03', "path": "#third" },
-        { "name": '04', "path": "#forth" }
+        { "name": '04', "path": "#forth" },
+        { "name": '05', "path": "#fith" }
     ];
 
     return (

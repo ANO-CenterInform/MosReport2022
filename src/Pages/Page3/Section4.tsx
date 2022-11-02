@@ -2,8 +2,8 @@ import icon_diploma from "./img/icon_diploma.svg";
 
 export default function Section4() {
     return (
-        <section className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
-            <h2 id={'forth'} className={"max-md:px-8 mb-6 xl:w-2/3 uppercase text-3xl text-mosBlue-700"}>ИНФОРМАЦИЯ О СУЩЕСТВЕННЫХ ФАКТАХ ЗА ОТЧЕТНЫЙ ПЕРИОД</h2>
+        <section id={'fith'} className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
+            <h2 className={"max-md:px-8 mb-6 xl:w-2/3 uppercase text-3xl text-mosBlue-700"}>ИНФОРМАЦИЯ О СУЩЕСТВЕННЫХ ФАКТАХ ЗА ОТЧЕТНЫЙ ПЕРИОД</h2>
 
             <div className={'flex flex-col md:flex-row max-md:px-8 gap-8 mb-8 lg:mb-12'}>
                 <div className={'md:w-1/2 flex flex-col items-center'}>

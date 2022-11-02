@@ -9,8 +9,8 @@ import man3 from "../../images/page1_man3.jpg";
 
 export default function Section3() {
     return (
-        <section className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
-            <h1 id={'third'} className="max-md:px-8 mb-8 xl:w-2/3 uppercase text-3xl text-mosBlue-700">ОРГАНЫ УПРАВЛЕНИЯ И КОНТРОЛЯ ОБЩЕСТВА</h1>
+        <section id={'third'} className="md:max-w-bootstrap-md 2xl:max-w-bootstrap-full mx-auto pt-10">
+            <h1 className="max-md:px-8 mb-8 xl:w-2/3 uppercase text-3xl text-mosBlue-700">ОРГАНЫ УПРАВЛЕНИЯ И КОНТРОЛЯ ОБЩЕСТВА</h1>
 
             <div className={'flex flex-col lg:flex-row items-center lg:items-start justify-between px-12 pt-12 gap-12 bg-neutral-100 font-bold text-center'}>
                 <div className={'flex flex-1 flex-col items-center'}>
@@ -164,6 +164,8 @@ export default function Section3() {
             <div className={'p-8 text-center bg-neutral-100 mb-6 lg:mb-12'}>
                 <p>Кравцов Ю.Н. и Суниев А.А. не имеют доли участия в уставном капитале Общества, им не принадлежат обыкновенные акции Общества.</p>
             </div>
+
+            <h1 id={'forth'} className="max-md:px-8 mb-8 xl:w-2/3 uppercase text-3xl text-mosBlue-700">РЕВИЗИОННАЯ КОМИССИЯ ОБЩЕСТВА</h1>
 
             <div className={'mb-6 lg:mb-12 px-6 lg:px-0'}>
                 <p>В целях осуществления контроля за финансово-хозяйственной деятельностью Общества Решением единственного акционера Общества, утвержденным распоряжением Депар- тамента строительства города Москвы от 29.06.2021 No Р-119/21 «Об утверждении Решения единственного акционера акционерного общества «Мосинжпроект», избрана ревизионная комиссия в следующем составе:</p>

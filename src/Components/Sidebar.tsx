@@ -105,10 +105,22 @@ export default function Sidebar({pageId, links}: LinksProps) {
                         <Accordion.Trigger><div className={'mb-4'}>общие сведения, положение акционерного общества в отрасли</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/2#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/2#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/2#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/2#forth'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>04. Информация о существенных фактах за отчетный период</NavHashLink></li>
+                            </ul>
+                        </Accordion.Content>
+                    </Accordion>
+                    <Accordion>
+                        <Accordion.Trigger><div className={'mb-4'}>СТРАТЕГИЯ И ПЕРСПЕКТИВЫ РАЗВИТИЯ ОБЩЕСТВА, СТРАТЕГИЧЕСКОЕ ВИДЕНИЕ ПЕРСПЕКТИВ</div></Accordion.Trigger>
+                        <Accordion.Content>
+                            <ul>
                                 <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavHashLink></li>
                                 <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavHashLink></li>
                                 <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#forth'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>04. Информация о существенных фактах за отчетный период</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#forth'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>04. Ревизионная комиссия общества</NavHashLink></li>
+                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#fith'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>05. Информация о существенных фактах за отчетный период</NavHashLink></li>
                             </ul>
                         </Accordion.Content>
                     </Accordion>
