@@ -1,7 +1,7 @@
 type LayoutTypes = {
     id: string,
     title: string,
-    children: string | JSX.Element[]
+    children: string[] | JSX.Element[] | string | JSX.Element
 }
 
 export default function SectionLayout({id, title, children}: LayoutTypes) {

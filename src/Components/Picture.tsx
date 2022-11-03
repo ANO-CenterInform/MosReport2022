@@ -11,7 +11,7 @@ export default function Picture({img, alt, className, pictureClass}: PictureType
             <source media="(max-width: 413px)" srcSet={`${img}?webp&w=412&&srcset&quality=10`} type="image/webp"/>
             <source srcSet={`${img}?avif&srcset&quality=10`} type="image/avif"/>
             <source srcSet={`${img}?webp&srcset&quality=10`} type="image/webp"/>
-            <img src={`${img}?quality=10&w=412`} alt={alt} className={className}/>
+            <img src={`${img}?jpg&quality=10&w=412`} alt={alt} className={className}/>
         </picture>
     );
 }

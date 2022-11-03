@@ -6,6 +6,7 @@ import Section1 from "./Section1";
 import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
+import Footer from "../../Components/Footer";
 
 export default function Index() {
 
@@ -22,14 +23,18 @@ export default function Index() {
     ];
 
     return (
-        <section className="relative grid sm:grid-cols-[7rem_1fr]">
-            <Sidebar pageId={3} links={pageLinks}/>
-            <main>
-                <Section1 />
-                <Section2 />
-                <Section3 />
-                <Section4 />
-            </main>
-        </section>
+        <>
+            <section className="relative grid sm:grid-cols-[7rem_1fr]">
+                <Sidebar pageId={3} links={pageLinks}/>
+                <main>
+                    <Section1 />
+                    <Section2 />
+                    <Section3 />
+                    <Section4 />
+                </main>
+            </section>
+
+            <Footer prev={'/pages/2'} next={'/pages/4'} />
+        </>
     )
 }

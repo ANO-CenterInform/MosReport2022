@@ -7,7 +7,6 @@ import { imagetools } from 'vite-imagetools'
 export default defineConfig({
   plugins: [
       react(),
-      imagetools(),
       viteImagemin({
       gifsicle: {
         optimizationLevel: 7,
@@ -34,5 +33,6 @@ export default defineConfig({
           },
         ],
       },
-    }),]
+    }),
+      imagetools(),]
 })
