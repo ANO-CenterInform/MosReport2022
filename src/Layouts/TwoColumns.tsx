@@ -1,6 +1,6 @@
 type ColumnTypes = {
     children: JSX.Element[] | JSX.Element,
-    extraClass?: string[]
+    extraClass?: string
 }
 
 function Column({children, extraClass}: ColumnTypes) {
@@ -13,7 +13,7 @@ function Column({children, extraClass}: ColumnTypes) {
 
 type TwoColumnsTypes = {
     children: JSX.Element[],
-    extraClass?: string[]
+    extraClass?: string
 }
 
 const TwoColumns = ({children, extraClass}: TwoColumnsTypes) => {

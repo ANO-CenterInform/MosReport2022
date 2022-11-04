@@ -22,10 +22,17 @@ import img4_avif from "./images/img4.jpg?format=avif&quality=60";
 import img4_webp from "./images/img4.jpg?format=webp&quality=60";
 // @ts-ignore
 import img4_fallback from "./images/img4.jpg?quality=60";
+// @ts-ignore
+import logo1_avif from "./images/logo1.jpg?format=avif&quality=60";
+// @ts-ignore
+import logo1_webp from "./images/logo1.jpg?format=webp&quality=60";
+// @ts-ignore
+import logo1_fallback from "./images/logo1.jpg?quality=60";
 
 import Picture2 from "../../Components/Picture2";
 import PageLayout from "../../Layouts/PageLayout";
 import pageLinks from "./PageLinks";
+import Picture from "../../Components/Picture";
 
 
 export default function Section4() {
@@ -105,6 +112,21 @@ export default function Section4() {
                 <div className={'mb-8'}><Picture2 avif={img4_avif} webp={img4_webp} fallback={img4_fallback} alt={''} pictureClass={'max-md:shrink-0'} /> </div>
                 <SingleParagraph>В 2021 году приступил к регулярной работе Комитет по новым проектам – коллегиаль- ный орган, управляющий процессами развития бизнеса и привлечения новых доход- ных проектов Общества.
                     За отчетный период АО «Мосинжпроект» получило успешные квалификации в РФ:</SingleParagraph>
+                <TwoColumns extraClass={'bg-neutral-100'}>
+                    <TwoColumns.Column extraClass={'justify-center'}>
+                        <div className={'shrink-0'}>
+                            <Picture2 avif={logo1_avif} webp={logo1_webp} fallback={logo1_fallback} alt={''} />
+                            <p>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
+                        </div>
+                    </TwoColumns.Column>
+                    <TwoColumns.Column extraClass={'justify-center'}>
+                        <div className={'shrink-0'}>
+                            <Picture2 avif={logo1_avif} webp={logo1_webp} fallback={logo1_fallback} alt={''} />
+                            <p>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
+                        </div>
+                    </TwoColumns.Column>
+
+                </TwoColumns>
             </SectionLayout>
         </PageLayout>
     );
