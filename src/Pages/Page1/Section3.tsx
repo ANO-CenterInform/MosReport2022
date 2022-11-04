@@ -9,19 +9,12 @@ import award8 from "./img/award8.jpg";
 import Award from "../../Components/Award";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
+import pageLinks from './PageLinks'
 
 export default function Section3() {
 
-    const pageLinks = [
-        { "name": '01', "path": "" },
-        { "name": '02', "path": "/2" },
-        { "name": '03', "path": "/3" },
-        { "name": '04', "path": "/4" },
-        { "name": '05', "path": "/5" }
-    ];
-
     return (
-        <PageLayout id={1} links={pageLinks} prevPage={'/page/1/2'} nextPage={'/page/1/3'}>
+        <PageLayout id={1} links={pageLinks} prevPage={'/pages/1/2'} nextPage={'/pages/1/3'}>
             <SectionLayout title={'награды и достижения холдинга «мосинжпроект» по итогам работы в 2021 году'}>
                     <h3 className={'p-4 mb-8 text-center text-white bg-mosBlue-700 text-lg font-bold'}>Рейтинги АО «Мосинжпроект»</h3>
                     <div className={'flex flex-col lg:flex-row justify-center lg:justyfy-start gap-8 mb-8'}>

@@ -3,28 +3,13 @@ import img2 from '../../../src/images/page1_screen2_img2.jpg';
 import Quote from "../../Components/Quote";
 import Picture from "../../Components/Picture";
 import SectionLayout from "../../Layouts/SectionLayout";
-import React, {Suspense, useEffect} from "react";
-import AOS from "aos";
-import Sidebar from "../../Components/Sidebar";
-import Footer from '../../Components/Footer'
 import PageLayout from "../../Layouts/PageLayout";
+import pageLinks from './PageLinks'
 
 export default function Section2() {
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
-
-    const pageLinks = [
-        { "name": '01', "path": "/1" },
-        { "name": '02', "path": "/2" },
-        { "name": '03', "path": "/3" },
-        { "name": '04', "path": "/4" },
-        { "name": '05', "path": "/5" }
-    ];
-
     return (
-        <PageLayout id={1} links={pageLinks} prevPage={'/page/1'} nextPage={'/page/3'}>
+        <PageLayout id={1} links={pageLinks} prevPage={'/page/1'} nextPage={'/pages/3'}>
             <SectionLayout title={'планы на будущее'}>
                 <div className={'mb-8'}>
                     <Picture img={img1} alt={''} />

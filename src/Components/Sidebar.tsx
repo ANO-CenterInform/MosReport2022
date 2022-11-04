@@ -102,12 +102,11 @@ export default function Sidebar({pageId, links}: LinksProps) {
                         <Accordion.Trigger><div className={'mb-4'}>обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
-
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={} className={(isActive) => (isActive ? 'mb-4 text-mosRose-500 hover:text-mosRose-500' : 'mb-4 hover:text-mosRose-500')}></NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/1/2'} className={'mb-4 hover:text-mosRose-500'}>02. Планы на будущее</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/1/3'} className={'mb-4 hover:text-mosRose-500'}>03. Награды и достижения</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/1/4'} className={'mb-4 hover:text-mosRose-500'}>04. Конкурсы АО «Мосинжпроект»</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/1/5'} className={'mb-4 hover:text-mosRose-500'}>05. Задачи, стоящие перед АО «Мосинжпроект» в следующем году</NavLink></li>
+                                <NaviLink path={'/pages/1/1'} text={'01. Обращение руководства АО «Мосинжпроект»'} />
+                                <NaviLink path={'/pages/1/2'} text={'02. Планы на будущее'} />
+                                <NaviLink path={'/pages/1/3'} text={'03. Награды и достижения'} />
+                                <NaviLink path={'/pages/1/4'} text={'04. Конкурсы АО «Мосинжпроект»'} />
+                                <NaviLink path={'/pages/1/5'} text={'05. Задачи, стоящие перед АО «Мосинжпроект» в следующем году'} />
                             </ul>
                         </Accordion.Content>
                     </Accordion>
@@ -115,10 +114,10 @@ export default function Sidebar({pageId, links}: LinksProps) {
                         <Accordion.Trigger><div className={'mb-4'}>общие сведения, положение акционерного общества в отрасли</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/2#first'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/2#second'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/2#third'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/2#forth'} className={'mb-4 hover:text-mosRose-500'}>04. Информация о существенных фактах за отчетный период</NavLink></li>
+                                <NaviLink path={'/pages/2/1'} text={'01. Стратегия и перспективы развития общества, стратегическое видение перспектив.'} />
+                                <NaviLink path={'/pages/2/2'} text={'02. Организационная структура'} />
+                                <NaviLink path={'/pages/2/3'} text={'03. Органы управления и контроля обществом'} />
+                                <NaviLink path={'/pages/2/4'} text={'04. Информация о существенных фактах за отчетный период'} />
                             </ul>
                         </Accordion.Content>
                     </Accordion>
@@ -126,11 +125,11 @@ export default function Sidebar({pageId, links}: LinksProps) {
                         <Accordion.Trigger><div className={'mb-4'}>СТРАТЕГИЯ И ПЕРСПЕКТИВЫ РАЗВИТИЯ ОБЩЕСТВА, СТРАТЕГИЧЕСКОЕ ВИДЕНИЕ ПЕРСПЕКТИВ</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#first'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#second'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#third'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#forth'} className={'mb-4 hover:text-mosRose-500'}>04. Ревизионная комиссия общества</NavLink></li>
-                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#fith'} className={'mb-4 hover:text-mosRose-500'}>05. Информация о существенных фактах за отчетный период</NavLink></li>
+                                <NaviLink path={'/pages/3/1'} text={'01. Стратегия и перспективы развития общества, стратегическое видение перспектив.'} />
+                                <NaviLink path={'/pages/3/2'} text={'02. Организационная структура'} />
+                                <NaviLink path={'/pages/3/3'} text={'03. Органы управления и контроля обществом'} />
+                                <NaviLink path={'/pages/3/4'} text={'04. Ревизионная комиссия общества'} />
+                                <NaviLink path={'/pages/3/5'} text={'05. Информация о существенных фактах за отчетный период'} />
                             </ul>
                         </Accordion.Content>
                     </Accordion>

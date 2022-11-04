@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 type PageLayoutTypes = {
     id: number,
-    links: Object,
+    links: object,
     children: JSX.Element,
     prevPage: string,
     nextPage: string
@@ -19,7 +19,8 @@ export default function PageLayout({id, links, children, prevPage, nextPage}: Pa
 
     return (
         <>
-            <section className="relative grid sm:grid-cols-[7rem_1fr]">
+            <section className="relative flex-1 grid sm:grid-cols-[7rem_1fr]">
+                {/*@ts-ignore*/}
                 <Sidebar pageId={id} links={links} />
                 <main>
                     {children}

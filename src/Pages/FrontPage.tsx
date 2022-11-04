@@ -58,7 +58,7 @@ export default function FrontPage() {
                     </div>
 
                     <div className="order-1 md:order-2 p-4 md:pt-0 md:pl-16">
-                        <Link to={"pages/1"} className="uppercase flex items-center">
+                        <Link to={"/pages/1/1"} className="uppercase flex items-center">
                             <span className="mr-2">Перейти в отчёт</span> <img src={icon_arrow_right} alt="" />
                         </Link>
                     </div>

@@ -46,8 +46,4 @@
     .text-border {
         text-shadow: -1px 1px 1px #fff, 1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
     }
-
-    .active {
-        opacity: 1;
-    }
 }
