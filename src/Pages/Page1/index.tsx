@@ -1,14 +1,13 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import React, {useEffect, Suspense} from "react";
+import React, {useEffect} from "react";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
 import Section5 from "./Section5";
 import Sidebar from '../../Components/Sidebar';
-
-const Footer = React.lazy(() => import('../../Components/Footer'));
+import Footer from '../../Components/Footer'
 
 export default function Index() {
 
@@ -27,7 +26,7 @@ export default function Index() {
     return (
         <>
             <section className="relative grid sm:grid-cols-[7rem_1fr]">
-                <Sidebar pageId={1} links={pageLinks}/>
+                <Sidebar pageId={1} links={5}/>
 
                 <main>
                     <Section1 />
@@ -37,9 +36,7 @@ export default function Index() {
                     <Section5 />
                 </main>
             </section>
-            <Suspense fallback={<div>Загрузка</div>}>
-                <Footer prev={'/'} next={'/pages/2'} />
-            </Suspense>
+            <Footer prev={'/'} next={'/pages/2'} />
         </>
     )
 }

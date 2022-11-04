@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Transition } from '@headlessui/react'
 import mosLogo from '../../src/images/mip_logo.png';
-import {NavHashLink} from 'react-router-hash-link';
 import Accordion from "./Accordion";
 import Picture from "./Picture";
+import {NavLink} from "react-router-dom";
+import NaviLink from "./NaviLink";
 
 type Links = {
     name: string,
@@ -17,6 +18,11 @@ type LinksProps = {
 
 export default function Sidebar({pageId, links}: LinksProps) {
     const [isOpen, setIsOpen] = useState(false)
+
+    const activeStyle = {
+        opacity: "100",
+    };
+
 
     useEffect(() => {
         function handleEscape(event: any) {
@@ -41,24 +47,27 @@ export default function Sidebar({pageId, links}: LinksProps) {
                             <div className="w-8 h-0.5 bg-white"></div></div> :
 
                         <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="#fff" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"></path>
+                             stroke="#fff" aria-hidden="true">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                  d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     }
                 </button>
                 <div className={'max-md:hidden md:fixed md:pt-24 lg:pt-36'}>
                     <ul>
-                        {links.map(link =>
-                            <li className={'mb-8'} key={link.name}>
-                                <NavHashLink
+                        {links.map((link, i) =>
+                            <li className={'mb-8'} key={i}>
+                                <NavLink
                                     className={'border-l p-2 border-white text-white opacity-50'}
-                                    smooth
                                     to={`/pages/${pageId}${link.path}`}
-                                    activeStyle={{ opacity: '100' }}>
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    }
+                                >
                                     {link.name}
-                                </NavHashLink>
-                            </li>)}
+                                </NavLink>
+                            </li>
+                        )}
                     </ul>
                 </div>
             </div>
@@ -93,11 +102,12 @@ export default function Sidebar({pageId, links}: LinksProps) {
                         <Accordion.Trigger><div className={'mb-4'}>обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Обращение руководства АО «Мосинжпроект»</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Планы на будущее</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>03. Награды и достижения</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>04. Конкурсы АО «Мосинжпроект»</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/1#fith'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>05. Задачи, стоящие перед АО «Мосинжпроект» в следующем году</NavHashLink></li>
+
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={} className={(isActive) => (isActive ? 'mb-4 text-mosRose-500 hover:text-mosRose-500' : 'mb-4 hover:text-mosRose-500')}></NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/1/2'} className={'mb-4 hover:text-mosRose-500'}>02. Планы на будущее</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/1/3'} className={'mb-4 hover:text-mosRose-500'}>03. Награды и достижения</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/1/4'} className={'mb-4 hover:text-mosRose-500'}>04. Конкурсы АО «Мосинжпроект»</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/1/5'} className={'mb-4 hover:text-mosRose-500'}>05. Задачи, стоящие перед АО «Мосинжпроект» в следующем году</NavLink></li>
                             </ul>
                         </Accordion.Content>
                     </Accordion>
@@ -105,10 +115,10 @@ export default function Sidebar({pageId, links}: LinksProps) {
                         <Accordion.Trigger><div className={'mb-4'}>общие сведения, положение акционерного общества в отрасли</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/2#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/2#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/2#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/2#forth'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>04. Информация о существенных фактах за отчетный период</NavHashLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/2#first'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/2#second'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/2#third'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/2#forth'} className={'mb-4 hover:text-mosRose-500'}>04. Информация о существенных фактах за отчетный период</NavLink></li>
                             </ul>
                         </Accordion.Content>
                     </Accordion>
@@ -116,11 +126,11 @@ export default function Sidebar({pageId, links}: LinksProps) {
                         <Accordion.Trigger><div className={'mb-4'}>СТРАТЕГИЯ И ПЕРСПЕКТИВЫ РАЗВИТИЯ ОБЩЕСТВА, СТРАТЕГИЧЕСКОЕ ВИДЕНИЕ ПЕРСПЕКТИВ</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#first'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#second'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#third'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#forth'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>04. Ревизионная комиссия общества</NavHashLink></li>
-                                <li className={'mb-4'}><NavHashLink smooth onClick={() => setIsOpen(false)} to={'/pages/3#fith'} activeClassName={'text-mosRose-500'} className={'mb-4 hover:text-mosRose-500'}>05. Информация о существенных фактах за отчетный период</NavHashLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#first'} className={'mb-4 hover:text-mosRose-500'}>01. Стратегия и перспективы развития общества, стратегическое видение перспектив.</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#second'} className={'mb-4 hover:text-mosRose-500'}>02. Организационная структура</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#third'} className={'mb-4 hover:text-mosRose-500'}>03. Органы управления и контроля обществом</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#forth'} className={'mb-4 hover:text-mosRose-500'}>04. Ревизионная комиссия общества</NavLink></li>
+                                <li className={'mb-4'}><NavLink onClick={() => setIsOpen(false)} to={'/pages/3#fith'} className={'mb-4 hover:text-mosRose-500'}>05. Информация о существенных фактах за отчетный период</NavLink></li>
                             </ul>
                         </Accordion.Content>
                     </Accordion>
