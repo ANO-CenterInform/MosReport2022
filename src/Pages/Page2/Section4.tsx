@@ -113,16 +113,16 @@ export default function Section4() {
                 <SingleParagraph>В 2021 году приступил к регулярной работе Комитет по новым проектам – коллегиаль- ный орган, управляющий процессами развития бизнеса и привлечения новых доход- ных проектов Общества.
                     За отчетный период АО «Мосинжпроект» получило успешные квалификации в РФ:</SingleParagraph>
                 <TwoColumns extraClass={'bg-neutral-100'}>
-                    <TwoColumns.Column extraClass={'justify-center'}>
+                    <TwoColumns.Column extraClass={'justify-center items-center p-12'}>
                         <div className={'shrink-0'}>
-                            <Picture2 avif={logo1_avif} webp={logo1_webp} fallback={logo1_fallback} alt={''} />
-                            <p>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
+                            <Picture2 avif={logo1_avif} webp={logo1_webp} fallback={logo1_fallback} alt={''} pictureClass={'mb-6'} className={'mx-auto'} />
+                            <p className={'text-center'}>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
                         </div>
                     </TwoColumns.Column>
-                    <TwoColumns.Column extraClass={'justify-center'}>
+                    <TwoColumns.Column extraClass={'justify-center items-center p-12'}>
                         <div className={'shrink-0'}>
-                            <Picture2 avif={logo1_avif} webp={logo1_webp} fallback={logo1_fallback} alt={''} />
-                            <p>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
+                            <Picture2 avif={logo1_avif} webp={logo1_webp} fallback={logo1_fallback} alt={''} pictureClass={'mb-6'} className={'mx-auto'} />
+                            <p className={'text-center'}>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
                         </div>
                     </TwoColumns.Column>
 
