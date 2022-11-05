@@ -23,16 +23,15 @@ import img4_webp from "./images/img4.jpg?format=webp&quality=60";
 // @ts-ignore
 import img4_fallback from "./images/img4.jpg?quality=60";
 // @ts-ignore
-import logo1_avif from "./images/logo1.jpg?format=avif&quality=60";
+import logo1 from './images/logo1.jpg?format=avif;webp;jpg&picture&quality=60'
 // @ts-ignore
-import logo1_webp from "./images/logo1.jpg?format=webp&quality=60";
-// @ts-ignore
-import logo1_fallback from "./images/logo1.jpg?quality=60";
+import logo2 from './images/logo2.jpg?format=avif;webp;jpg&picture&quality=60'
 
 import Picture2 from "../../Components/Picture2";
 import PageLayout from "../../Layouts/PageLayout";
 import pageLinks from "./PageLinks";
 import Picture from "../../Components/Picture";
+import Picture3 from "../../Components/Picture3";
 
 
 export default function Section4() {
@@ -115,13 +114,13 @@ export default function Section4() {
                 <TwoColumns extraClass={'bg-neutral-100'}>
                     <TwoColumns.Column extraClass={'justify-center items-center p-12'}>
                         <div className={'shrink-0'}>
-                            <Picture2 avif={logo1_avif} webp={logo1_webp} fallback={logo1_fallback} alt={''} pictureClass={'mb-6'} className={'mx-auto'} />
+                            <Picture3 img={logo1} pictureClass={'block mb-6'} className={'mx-auto'}  />
                             <p className={'text-center'}>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
                         </div>
                     </TwoColumns.Column>
                     <TwoColumns.Column extraClass={'justify-center items-center p-12'}>
                         <div className={'shrink-0'}>
-                            <Picture2 avif={logo1_avif} webp={logo1_webp} fallback={logo1_fallback} alt={''} pictureClass={'mb-6'} className={'mx-auto'} />
+                            <Picture3 img={logo2} pictureClass={'mb-6 block'} className={'mx-auto'}  />
                             <p className={'text-center'}>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
                         </div>
                     </TwoColumns.Column>
