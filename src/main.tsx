@@ -11,6 +11,9 @@ const Page2Section1 = React.lazy(() => import('./Pages/Page2/Section1'));
 const Page2Section2 = React.lazy(() => import('./Pages/Page2/Section2'));
 const Page2Section3 = React.lazy(() => import('./Pages/Page2/Section3'));
 const Page2Section4 = React.lazy(() => import('./Pages/Page2/Section4'));
+const Page2Section5 = React.lazy(() => import('./Pages/Page2/Section5'));
+const Page2Section6 = React.lazy(() => import('./Pages/Page2/Section6'));
+const Page2Section7 = React.lazy(() => import('./Pages/Page2/Section7'));
 const Page3Section1 = React.lazy(() => import('./Pages/Page3/Section1'));
 const Page3Section2 = React.lazy(() => import('./Pages/Page3/Section2'));
 const Page3Section3 = React.lazy(() => import('./Pages/Page3/Section3'));
@@ -21,11 +24,13 @@ import {
     Routes,
     Route
 } from "react-router-dom";
+import ScrollToTop from "./hooks/scrollToTop";
 
 ReactDOM.render(
     <React.StrictMode>
         <Suspense fallback={<Loader />}>
             <Router>
+                <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<FrontPage />} />
                     <Route path="/pages/1/1" element={<Page1Section1 />} />
@@ -37,6 +42,9 @@ ReactDOM.render(
                     <Route path="/pages/2/2" element={<Page2Section2 />} />
                     <Route path="/pages/2/3" element={<Page2Section3 />} />
                     <Route path="/pages/2/4" element={<Page2Section4 />} />
+                    <Route path="/pages/2/5" element={<Page2Section5 />} />
+                    <Route path="/pages/2/6" element={<Page2Section6 />} />
+                    <Route path="/pages/2/7" element={<Page2Section7 />} />
                     <Route path="/pages/3/1" element={<Page3Section1 />} />
                     <Route path="/pages/3/2" element={<Page3Section2 />} />
                     <Route path="/pages/3/3" element={<Page3Section3 />} />

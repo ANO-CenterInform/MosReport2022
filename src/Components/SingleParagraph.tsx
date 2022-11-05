@@ -1,5 +1,5 @@
 type SingleParagraphTypes = {
-    children: string | string[],
+    children: any,
     extraClass?: string
 }
 

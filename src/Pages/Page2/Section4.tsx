@@ -11,32 +11,22 @@ import icon_cran from './images/icon_cran.svg'
 import icon_plant from './images/icon_plant.svg'
 
 // @ts-ignore
-import img3_avif from "./images/img3.jpg?format=avif&quality=60";
+import img3 from './images/img3.jpg?format=avif;webp;jpg&picture&quality=60'
 // @ts-ignore
-import img3_webp from "./images/img3.jpg?format=webp&quality=60";
-// @ts-ignore
-import img3_fallback from "./images/img3.jpg?quality=60";
-// @ts-ignore
-import img4_avif from "./images/img4.jpg?format=avif&quality=60";
-// @ts-ignore
-import img4_webp from "./images/img4.jpg?format=webp&quality=60";
-// @ts-ignore
-import img4_fallback from "./images/img4.jpg?quality=60";
+import img4 from './images/img4.jpg?format=avif;webp;jpg&picture&quality=60'
 // @ts-ignore
 import logo1 from './images/logo1.jpg?format=avif;webp;jpg&picture&quality=60'
 // @ts-ignore
 import logo2 from './images/logo2.jpg?format=avif;webp;jpg&picture&quality=60'
 
-import Picture2 from "../../Components/Picture2";
 import PageLayout from "../../Layouts/PageLayout";
 import pageLinks from "./PageLinks";
-import Picture from "../../Components/Picture";
 import Picture3 from "../../Components/Picture3";
 
 
 export default function Section4() {
     return (
-        <PageLayout id={2} links={pageLinks} prevPage={'/pages/2/3'} nextPage={'/pages/3/1'}>
+        <PageLayout id={2} links={pageLinks} prevPage={'/pages/2/3'} nextPage={'/pages/2/5'}>
             <SectionLayout title={'ПРИОРИТЕТНЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ'}>
                 <SingleParagraph>Инжиниринговая компания «Мосинжпроект» – лидер строительной отрасли Москвы и одна из самых динамично развивающихся компаний России.</SingleParagraph>
                 <div className={'p-12 lg:p-16 bg-neutral-100 mb-8'}>
@@ -86,7 +76,7 @@ export default function Section4() {
                 </TwoColumns>{/* End of block */}
                 <SingleParagraph>Для реализации поставленных задач по развитию транспортной инфраструктуры в АИП Москвы в период 2022-20246 запланиро- ваны следующие объемы финансирования:</SingleParagraph>
                 <div className={'flex overflow-x-auto mb-8'}>
-                    <Picture2 avif={img3_avif} webp={img3_webp} fallback={img3_fallback} alt={''} pictureClass={'max-md:shrink-0'} />
+                    <Picture3 img={img3} alt={''} pictureClass={'max-md:shrink-0'} />
                 </div>{/* End of block */}
                 <SingleParagraph>Кроме того, Общество в целях увеличения выручки и обеспечения ее диверсификации при сохранении приоритета выполнения строительных проектов на рынке города Москвы рассматривает следующие новые сегменты деятельности:</SingleParagraph>
                 <div className={'flex flex-col lg:flex-row justify-start items-center lg:justify-between lg:items-stretch gap-8 mb-12'}>
@@ -108,7 +98,9 @@ export default function Section4() {
                     </div>
                 </div>{/*Block end*/}
                 <SingleParagraph extraClass={'pt-8 border-t border-gray-400 text-gray-400'}>6. Утверждено приказом департамента строительства города Москвы от 27.10.2021 NoПР-396/21</SingleParagraph>
-                <div className={'mb-8'}><Picture2 avif={img4_avif} webp={img4_webp} fallback={img4_fallback} alt={''} pictureClass={'max-md:shrink-0'} /> </div>
+                <div className={'mb-8'}>
+                    <Picture3 img={img4} alt={''} pictureClass={'max-md:shrink-0'} />
+                </div>
                 <SingleParagraph>В 2021 году приступил к регулярной работе Комитет по новым проектам – коллегиаль- ный орган, управляющий процессами развития бизнеса и привлечения новых доход- ных проектов Общества.
                     За отчетный период АО «Мосинжпроект» получило успешные квалификации в РФ:</SingleParagraph>
                 <TwoColumns extraClass={'bg-neutral-100'}>
@@ -124,8 +116,11 @@ export default function Section4() {
                             <p className={'text-center'}>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
                         </div>
                     </TwoColumns.Column>
-
                 </TwoColumns>
+                <SingleParagraph extraClass={'mb-24'}>
+                    На международном уровне холдинг подтвердил квалификацию и техническое соответствие на выполнение работ по строительству метро в городе Измир (Турция), а также по развитию инфраструктуры городского рельсового транспорта в Иерусалиме (Израиль) и Ташкенте (Узбекистан).
+                    <br/>По итогам успешного квалификационного отбора поступают приглашения к участию в конкурсных процедурах Заказчиков. По наиболее перспективным проектам подтверждается участие в тендерах и осуществляется подготовка технико-коммерческих предложений.
+                </SingleParagraph>
             </SectionLayout>
         </PageLayout>
     );

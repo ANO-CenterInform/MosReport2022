@@ -18,7 +18,7 @@ export default function Section1() {
                         </div>
                     </div>{/* Block end */}
 
-                    <div className={'flex flex-col md:flex-row max-md:px-8 md:gap-8'}>
+                    <div className={'flex flex-col md:flex-row max-md:px-8 md:gap-8 mb-24'}>
                         <div className={'md:w-1/2'}>
                             <p className={'mb-4'}>В качестве приоритетов в период до 2024 года и на перспективу до 2030 года Компания определяет следующее:</p>
                             <ol className={'ml-4 list-outside list-decimal'}>

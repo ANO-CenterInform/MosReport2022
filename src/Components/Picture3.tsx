@@ -16,7 +16,7 @@ export default function Picture3({img, alt, className, pictureClass}: PictureTyp
     return (
         <picture className={pictureClass}>
             {Object.entries(img.sources).map(entry => {
-                return <source srcSet={entry[1][0].src} type={`image/${entry[0]}`}/>
+                return <source srcSet={entry[1][0].src} type={`image/${entry[0]}`}  key={entry[0]}/>
             })}
         <img src={img.fallback.src} alt={alt} className={className} />
     </picture>);
