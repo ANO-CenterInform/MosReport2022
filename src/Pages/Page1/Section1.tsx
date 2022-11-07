@@ -21,38 +21,31 @@ import SectionLayout from "../../Layouts/SectionLayout";
 import PageLayout from "../../Layouts/PageLayout";
 
 export default function Section1() {
-
     return (
 
-        <PageLayout id={1} links={5} prevPage={'/'} nextPage={'/page/1/2'}>
+        <PageLayout id={1} links={5} prevPage={'/'} nextPage={'/pages/1/2'}>
             <SectionLayout title={'обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту'} >
-                <div className="relative md:static lg:grid lg:grid-cols-[54px_215px_16px_215px_16px_215px_54px] 2xl:grid-cols-[100px_300px_22px_300px_22px_300px_100px]">
+                <div className="relative md:static lg:grid xl:grid-cols-[100px_300px_22px_300px_22px_300px_100px]">
                     <div>{''}</div>
-                    <div data-aos="fade-up" data-aos-delay="100">
-                        <PersonCard
+                    <PersonCard
                             image={man1}
                             name={'Газизуллин Марс Мулланурович'}
                             job={'Председатель совета директоров АО «Мосинжпроект»'} />
-                    </div>
-                    <div className="md:hidden w-full bg-mosBlue-700 absolute h-[104px] top-[286px] -z-[1]"></div>
+                    <div className="md:hidden w-full bg-mosBlue-700 absolute h-[144px] top-[286px] -z-[1]"></div>
                     <div>{''}</div>
-                    <div data-aos="fade-up" data-aos-delay="200">
-                        <PersonCard
+                    <PersonCard
                             image={man2}
                             name={'Кравцов Юрий Николаевич'}
                             job={'Генеральный директор АО «Мосинжпроект»'} />
-                    </div>
                     <div>{''}</div>
-                    <div data-aos="fade-up" data-aos-delay="300">
                         <PersonCard
                             image={man3}
                             name={'Суниев Альберт Альфатович'}
                             job={'Исполнительный директор по девелопменту АО «Мосинжпроект»'} />
-                    </div>
                     <div>{''}</div>
                 </div>{/*Block end*/}
 
-                <div className="-mt-[152px] max-md:pt-[164px] md:pt-[134px] 2xl:-mt-[104px] lg:pt-[154px] 2xl:pt-[104px] px-6 bg-mosBlue-700 text-white">
+                <div className="-mt-[200px] max-md:pt-[200px] md:pt-[134px] 2xl:-mt-[144px] lg:pt-[200px] 2xl:pt-[144px] px-6 bg-mosBlue-700 text-white">
                     <p className="mb-8 pt-6">«Мосинжпроект» в 2021 году значительно приблизил реализацию ключевого проекта современного отечественного метростроения – создание Большой кольцевой линии московского метро. Весной были запущены две станции – «Народное Ополчение» и «Мнёвники». В декабре открыт участок Большой кольцевой линии метро с десятью станциями. По состоянию на конец 2021 года на Большом кольце работают 22 станции.</p>
                     <p className="pb-8">Всего на БКЛ протяженностью 70 км будет функционировать 31 станция, то есть сейчас пассажиров принимают уже две трети из них. Завершение тоннелепроходки на Большом кольце – это огромный труд более чем 4 000 строителей в густонаселенных районах Москвы с большим количеством инженерных коммуникаций, в сложных гидрогеологических условиях.</p>
                 </div>{/*Block end*/}
@@ -64,7 +57,7 @@ export default function Section1() {
                          data-aos-delay="100">
                         <div className="mb-6"><img src={icon_metro} alt="" /></div>
                         <div>
-                            <p className="text-3xl md:text-4xl font-bold text-mosBlue-700">70 км</p>
+                            <p className="text-3xl md:text-4xl font-bold text-mosBlue-700"><Counter min={0} max={70}/> км</p>
                             <p className="text-sm">протяженность БКЛ</p>
                         </div>
                     </div>
@@ -73,7 +66,7 @@ export default function Section1() {
                          data-aos-easing="ease-in-back"
                          data-aos-delay="200">
                         <div className="mb-6"><img src={icon_train} alt="" /></div>
-                        <p className="text-3xl md:text-4xl font-bold text-mosBlue-700">31 станция</p>
+                        <p className="text-3xl md:text-4xl font-bold text-mosBlue-700"><Counter min={0} max={31}/> станция</p>
                     </div>
                     <div className="flex flex-col items-center justify-start"
                          data-aos="flip-left"
@@ -81,7 +74,7 @@ export default function Section1() {
                          data-aos-delay="300">
                         <div className="mb-6"><img src={icon_builder} alt="" /></div>
                         <div>
-                            <p className="text-3xl md:text-4xl font-bold text-mosBlue-700">4000 строителей</p>
+                            <p className="text-3xl md:text-4xl font-bold text-mosBlue-700"><Counter min={3800} max={4000}/> строителей</p>
                             <p className="text-sm">участвуют в строительстве БКЛ</p>
                         </div>
                     </div>
@@ -133,19 +126,21 @@ export default function Section1() {
 
                 <div className={'md:mb-8'}>
                     <div><Picture img={img9}  alt={''} /></div>
-                    <div className={'p-8 bg-neutral-100 flex flex-wrap max-md:flex-col  lg:flex-nowrap'}>
+                    <div className={'p-8 bg-neutral-100 flex flex-wrap max-md:flex-col lg:flex-nowrap'}>
                         <div className={'shrink-0'}><Picture img={img10}  alt={''} className={'max-md:order-2'} /></div>
                         <p className={'max-md:order-1 md:pl-8 max-md:mb-8'}>Строительством уникального, знакового для России объекта «Национальный космический центр», который станет одним из крупнейших в мире космических центров. Площадь объектов превысит 250 тыс. кв. метров. Высотной доминантой комплекса зданий будет 288-метровая башня со шпилем. Именно на строительстве Национального космического центра тестируются и внедряются новые технологии на разных этапах строительного производства, охраны труда, промышленной безопасности.</p>
                     </div>
                 </div>{/*Block end*/}
 
-                <div className={'flex flex-wrap lg:flex-nowrap lg:gap-6 mb-8 justify-center lg:justify-between'}>
+                <div className={'flex flex-col md:flex-row flex-wrap lg:flex-nowrap lg:gap-6 mb-8 justify-center lg:justify-between'}>
                     <div className={'flex flex-col justify-between gap-6'}>
                         <div className={'text-3xl text-white bg-mosBlue-700 uppercase p-6'}>
                             <p className={'text-center'}>в проектном портфеле общества присутствуют также и крупные градостроительные проекты:</p>
                         </div>
-                        <div className={'flex max-md:flex-col flex-wrap lg:flex-nowrap lg:gap-6 lg:justify-between'}>
-                            <img className={'max-md:order-2 max-md:px-8 max-md:mb-8'} src={img11} alt={''}/>
+                        <div className={'flex flex-col xl:flex-row lg:gap-6 lg:justify-between'}>
+                            <div className={'shrink-0'}>
+                                <img className={'max-md:order-2 max-md:px-8 max-md:mb-8'} src={img11} alt={''}/>
+                            </div>
                             <div className={'px-6 lg:pl-8 max-md:order-1 max-md:mb-8 max-md:px-8'}>
                                 <ul>
                                     <li className={'list-disc list-outside'}>
@@ -156,7 +151,7 @@ export default function Section1() {
                         </div>
                     </div>{/*Block end*/}
 
-                    <div className={'flex flex-col justify-between md:mb-8'}>
+                    <div className={'flex flex-col md:mb-8'}>
                         <div className={'max-md:order-2 max-md:px-8'}><Picture img={img12}  alt={''} /></div>
                         <div className={'p-6 max-md:order-1 max-md:px-8 max-md:pt-0'}>
                             <ul>

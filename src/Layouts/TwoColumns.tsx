@@ -3,7 +3,7 @@ type ColumnTypes = {
     extraClass?: string
 }
 
-function Column({children, extraClass}: ColumnTypes) {
+function Column({children, extraClass = ''}: ColumnTypes) {
     return (
         <div className={`lg:w-1/2 max-md:px-8 ${extraClass}`}>
         {children}
@@ -16,7 +16,7 @@ type TwoColumnsTypes = {
     extraClass?: string
 }
 
-const TwoColumns = ({children, extraClass}: TwoColumnsTypes) => {
+const TwoColumns = ({children, extraClass = ''}: TwoColumnsTypes) => {
     return (
         <div className={`flex flex-col lg:flex-row gap-8 mb-8 ${extraClass}`}>
         {children}

@@ -118,7 +118,7 @@ export default function Sidebar({pageId, links}: LinksProps) {
                         </Accordion.Content>
                     </Accordion>
                     <Accordion>
-                        <Accordion.Trigger><div className={'mb-4'}>СТРАТЕГИЯ И ПЕРСПЕКТИВЫ РАЗВИТИЯ ОБЩЕСТВА, СТРАТЕГИЧЕСКОЕ ВИДЕНИЕ ПЕРСПЕКТИВ</div></Accordion.Trigger>
+                        <Accordion.Trigger><div className={'mb-4'}>Корпоративное управление</div></Accordion.Trigger>
                         <Accordion.Content>
                             <ul>
                                 <NaviLink path={'/pages/3/1'} text={'01. Стратегия и перспективы развития общества, стратегическое видение перспектив.'} />
@@ -129,6 +129,29 @@ export default function Sidebar({pageId, links}: LinksProps) {
                             </ul>
                         </Accordion.Content>
                     </Accordion>
+                    <Accordion>
+                        <Accordion.Trigger><div className={'mb-4'}>Основные производственные показатели</div></Accordion.Trigger>
+                        <Accordion.Content>
+                            <ul>
+                                <NaviLink path={'/pages/4/1'} text={'01. Основные итоги реализации программ города'} />
+                                <NaviLink path={'/pages/4/2'} text={'02. Москвы по строительству метро, инфраструктурных, гражданских и дорожных объектов'} />
+                                <NaviLink path={'/pages/4/3'} text={'03. Объем работ, выполненных в 2018-2021 годах'} />
+                            </ul>
+                        </Accordion.Content>
+                    </Accordion>
+                    <Accordion>
+                        <Accordion.Trigger><div className={'mb-4'}>Основные показатели финансово-хозяйственной деятельности</div></Accordion.Trigger>
+                        <Accordion.Content>
+                            <ul>
+                                <NaviLink path={'/pages/5/1'} text={'01. Анализ финансовых результатов деятельности Общества'} />
+                                <NaviLink path={'/pages/5/2'} text={'02. Анализ структуры активов Общества'} />
+                                <NaviLink path={'/pages/5/3'} text={'03. Анализ структуры пассивов Общества'} />
+                                <NaviLink path={'/pages/5/4'} text={'04. Анализ основных производственных показателей по персоналу'} />
+                            </ul>
+                        </Accordion.Content>
+                    </Accordion>
+                    <div className={'mb-4 pl-6 uppercase'}><NaviLink path={'/pages/6/1'} text={'Распределение прибыли Общества'} /></div>
+                    <div className={'mb-4 pl-6 uppercase'}><NaviLink path={'/pages/7/1'} text={'Инвестиционная деятельность'} /></div>
                 </div>
             </Transition>
         </aside>

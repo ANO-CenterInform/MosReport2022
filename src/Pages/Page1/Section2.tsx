@@ -8,7 +8,7 @@ import PageLayout from "../../Layouts/PageLayout";
 export default function Section2() {
 
     return (
-        <PageLayout id={1} links={5} prevPage={'/page/1'} nextPage={'/pages/3'}>
+        <PageLayout id={1} links={5} prevPage={'/pages/1'} nextPage={'/pages/3'}>
             <SectionLayout title={'планы на будущее'}>
                 <div className={'mb-8'}>
                     <Picture img={img1} alt={''} />

@@ -1,5 +1,5 @@
 import Picture from "./Picture";
-
+import { motion } from "framer-motion"
 type PersonTypes = {
     image: string,
     name: string,
@@ -8,12 +8,16 @@ type PersonTypes = {
 
 export default function PersonCard({image, name, job}: PersonTypes) {
     return (
-        <div className={`flex flex-col items-center`}>
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className={`flex flex-col items-center`}>
             <div className="flex justify-center"><Picture img={image} alt={''} /></div>
             <div className="flex-1 p-4 bg-mosRose-500 text-white text-center max-w-[300px]">
                 <p className="font-bold">{name}</p>
                 <p>{job}</p>
             </div>
-        </div>
+        </motion.div>
     );
 }

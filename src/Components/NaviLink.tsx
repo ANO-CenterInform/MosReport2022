@@ -13,7 +13,7 @@ export default function NaviLink({path, text}: NaviLink) {
     };
 
     return (
-        <li className={'mb-4'}>
+        <li className={'mb-4 list-none'}>
             <NavLink
                 to={path}
                 className={'mb-4 hover:text-mosRose-500'}
