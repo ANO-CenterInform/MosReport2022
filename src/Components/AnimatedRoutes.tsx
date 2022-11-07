@@ -23,6 +23,7 @@ const Page5Section1 = React.lazy(() => import('../Pages/Page5/Section1'));
 const Page5Section2 = React.lazy(() => import('../Pages/Page5/Section2'));
 const Page5Section3 = React.lazy(() => import('../Pages/Page5/Section3'));
 const Page5Section4 = React.lazy(() => import('../Pages/Page5/Section4'));
+const Page6Section1 = React.lazy(() => import('../Pages/Page6/Section1'));
 
 import {AnimatePresence} from "framer-motion";
 
@@ -54,6 +55,7 @@ export default function AnimatedRoutes() {
                 <Route path="/pages/5/2" element={<Page5Section2 />} />
                 <Route path="/pages/5/3" element={<Page5Section3 />} />
                 <Route path="/pages/5/4" element={<Page5Section4 />} />
+                <Route path="/pages/6/1" element={<Page6Section1 />} />
             </Routes>
         </AnimatePresence>
 
