@@ -2,6 +2,7 @@ import Sidebar from "../Components/Sidebar";
 import {useEffect} from "react";
 import AOS from "aos";
 import Footer from "../Components/Footer";
+import {motion} from "framer-motion";
 
 type PageLayoutTypes = {
     id: number,
@@ -18,7 +19,12 @@ export default function PageLayout({id, links, children, prevPage, nextPage}: Pa
     }, [])
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+        >
             <section className="relative flex-1 grid sm:grid-cols-[7rem_1fr]">
                 {/*@ts-ignore*/}
                 <Sidebar pageId={id} links={links} />
@@ -27,6 +33,6 @@ export default function PageLayout({id, links, children, prevPage, nextPage}: Pa
                 </main>
             </section>
             <Footer prev={prevPage} next={nextPage} />
-        </>
+        </motion.div>
     );
 }
