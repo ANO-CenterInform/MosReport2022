@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 
 type PageLayoutTypes = {
     id: number,
-    links: object,
+    links: number,
     children: JSX.Element,
     prevPage: string,
     nextPage: string
@@ -20,6 +20,7 @@ export default function PageLayout({id, links, children, prevPage, nextPage}: Pa
 
     return (
         <motion.div
+            className={'flex flex-col h-full justify-between'}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

@@ -5,15 +5,11 @@ import Accordion from "./Accordion";
 import Picture from "./Picture";
 import {NavLink} from "react-router-dom";
 import NaviLink from "./NaviLink";
-
-type Links = {
-    name: string,
-    path: string,
-}
+import pl from "../hooks/pageLinks";
 
 type LinksProps = {
     pageId: number;
-    links: Links[];
+    links: number;
 }
 
 export default function Sidebar({pageId, links}: LinksProps) {
@@ -55,16 +51,16 @@ export default function Sidebar({pageId, links}: LinksProps) {
                 </button>
                 <div className={'max-md:hidden md:fixed md:pt-24 lg:pt-36'}>
                     <ul>
-                        {links.map((link, i) =>
-                            <li className={'mb-8'} key={i}>
+                        {pl(links).map(item =>
+                            <li className={'mb-8'} key={item.name}>
                                 <NavLink
                                     className={'border-l p-2 border-white text-white opacity-50'}
-                                    to={`/pages/${pageId}${link.path}`}
+                                    to={`/pages/${pageId}${item.path}`}
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
                                     }
                                 >
-                                    {link.name}
+                                    {item.name}
                                 </NavLink>
                             </li>
                         )}

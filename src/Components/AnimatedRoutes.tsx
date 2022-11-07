@@ -17,13 +17,15 @@ const Page3Section1 = React.lazy(() => import('../Pages/Page3/Section1'));
 const Page3Section2 = React.lazy(() => import('../Pages/Page3/Section2'));
 const Page3Section3 = React.lazy(() => import('../Pages/Page3/Section3'));
 const Page3Section4 = React.lazy(() => import('../Pages/Page3/Section4'));
+const Page4Section1 = React.lazy(() => import('../Pages/Page4/Section1'));
+const Page4Section2 = React.lazy(() => import('../Pages/Page4/Section2'));
 
 import {AnimatePresence} from "framer-motion";
 
 export default function AnimatedRoutes() {
     const location = useLocation();
     return(
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode='wait'>
             <Routes key={location.pathname} location={location}>
                 <Route path="/" element={<FrontPage />} />
                 <Route path="/pages/1/1" element={<Page1Section1 />} />
@@ -42,6 +44,8 @@ export default function AnimatedRoutes() {
                 <Route path="/pages/3/2" element={<Page3Section2 />} />
                 <Route path="/pages/3/3" element={<Page3Section3 />} />
                 <Route path="/pages/3/4" element={<Page3Section4 />} />
+                <Route path="/pages/4/1" element={<Page4Section1 />} />
+                <Route path="/pages/4/2" element={<Page4Section2 />} />
             </Routes>
         </AnimatePresence>
 

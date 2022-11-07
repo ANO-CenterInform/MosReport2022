@@ -1,5 +1,4 @@
 import PageLayout from "../../Layouts/PageLayout";
-import pageLinks from "./PageLinks";
 import SectionLayout from "../../Layouts/SectionLayout";
 import TwoColumns from "../../Layouts/TwoColumns";
 // @ts-ignore
@@ -8,7 +7,7 @@ import Picture3 from "../../Components/Picture3";
 
 export default function Section6() {
     return (
-        <PageLayout id={2} links={pageLinks} prevPage={'/pages/2/5'} nextPage={'/pages/2/7'}>
+        <PageLayout id={2} links={7} prevPage={'/pages/2/5'} nextPage={'/pages/2/7'}>
             <SectionLayout title={'РАЗРАБОТКА И ВНЕДРЕНИЕ ИНСТРУМЕНТОВ В ОБЛАСТИ ИННОВАЦИЙ, ПРИМЕНЕНИЕ НОВЫХ ТЕХНОЛОГИЙ'}>
                 <TwoColumns>
                     <TwoColumns.Column>

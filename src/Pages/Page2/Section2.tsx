@@ -1,11 +1,10 @@
 import SectionLayout from "../../Layouts/SectionLayout";
 import TwoColumns from "../../Layouts/TwoColumns";
 import PageLayout from "../../Layouts/PageLayout";
-import pageLinks from "./PageLinks";
 
 export default function Section2() {
     return (
-        <PageLayout id={2} links={pageLinks} prevPage={'/pages/2/1'} nextPage={'/pages/2/3'}>
+        <PageLayout id={2} links={7} prevPage={'/pages/2/1'} nextPage={'/pages/2/3'}>
             <SectionLayout title={'МАКРОЭКОНОМИЧЕСКИЕ И ОТРАСЛЕВЫЕ УСЛОВИЯ'}>
                 <TwoColumns extraClass={'mb-24'}>
                     <TwoColumns.Column>

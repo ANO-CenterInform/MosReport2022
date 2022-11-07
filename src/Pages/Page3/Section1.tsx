@@ -1,10 +1,9 @@
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
-import pageLinks from "./pageLinks";
 
 export default function Section1() {
     return (
-        <PageLayout id={3} links={pageLinks} prevPage={'/pages/2/4'} nextPage={'/pages/3/2'}>
+        <PageLayout id={3} links={4} prevPage={'/pages/2/4'} nextPage={'/pages/3/2'}>
             <SectionLayout title={'СТРАТЕГИЯ И ПЕРСПЕКТИВЫ РАЗВИТИЯ ОБЩЕСТВА, СТРАТЕГИЧЕСКОЕ ВИДЕНИЕ ПЕРСПЕКТИВ'}>
                     <p className={'max-md:px-8 mb-6'}>В 2021 году компания сформировала концепцию стратегического развития до 2030 года, обеспечивающую реализацию программ города Москвы в заданные сроки в соответствии с утвержденным бюджетом. Стратегия развития нацелена на повышение качества управления компанией, формирование компетенций, ресурсов и коммерческих возможности для реализации крупных генподрядных проектов, повышение социальной ответственности за качество и безопасность деятельности сотрудников и его подрядчиков, расширение портфеля заказов.</p>
                     {/*Block end*/}

@@ -1,11 +1,10 @@
 import icon_diploma from "./img/icon_diploma.svg";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
-import pageLinks from "./pageLinks";
 
 export default function Section4() {
     return (
-        <PageLayout id={3} links={pageLinks} prevPage={'/pages/3/3'} nextPage={'/pages/4/1'}>
+        <PageLayout id={3} links={4} prevPage={'/pages/3/3'} nextPage={'/pages/4/1'}>
             <SectionLayout title={'ИНФОРМАЦИЯ О СУЩЕСТВЕННЫХ ФАКТАХ ЗА ОТЧЕТНЫЙ ПЕРИОД'}>
                     <div className={'flex flex-col md:flex-row max-md:px-8 gap-8 mb-8 lg:mb-12'}>
                         <div className={'md:w-1/2 flex flex-col items-center'}>

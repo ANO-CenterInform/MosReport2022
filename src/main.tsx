@@ -1,5 +1,5 @@
 import React, {Suspense} from 'react'
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import Loader from "./Components/Loader";
 import './index.css'
 import {
@@ -8,15 +8,17 @@ import {
 import ScrollToTop from "./hooks/scrollToTop";
 import AnimatedRoutes from "./Components/AnimatedRoutes";
 
-
-ReactDOM.render(
+// @ts-ignore
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
     <React.StrictMode>
-        <Suspense fallback={<Loader />}>
-            <Router>
-                <ScrollToTop />
-                <AnimatedRoutes />
-            </Router>
-        </Suspense>
-    </React.StrictMode>,
-    document.getElementById('root'),
+        <React.StrictMode>
+            <Suspense fallback={<Loader />}>
+                <Router>
+                    <ScrollToTop />
+                    <AnimatedRoutes />
+                </Router>
+            </Suspense>
+        </React.StrictMode>
+    </React.StrictMode>
 );

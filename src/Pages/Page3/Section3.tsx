@@ -8,11 +8,10 @@ import man2 from "../../images/page1_man2.jpg";
 import man3 from "../../images/page1_man3.jpg";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
-import pageLinks from "./pageLinks";
 
 export default function Section3() {
     return (
-        <PageLayout id={3} links={pageLinks} prevPage={'/pages/3/2'} nextPage={'/pages/3/4'}>
+        <PageLayout id={3} links={4} prevPage={'/pages/3/2'} nextPage={'/pages/3/4'}>
             <SectionLayout title={'ОРГАНЫ УПРАВЛЕНИЯ И КОНТРОЛЯ ОБЩЕСТВА'}>
                     <div className={'flex flex-col lg:flex-row items-center lg:items-start justify-between px-12 pt-12 gap-12 bg-neutral-100 font-bold text-center'}>
                         <div className={'flex flex-1 flex-col items-center'}>

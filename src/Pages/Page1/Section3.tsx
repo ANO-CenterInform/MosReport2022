@@ -9,12 +9,11 @@ import award8 from "./img/award8.jpg";
 import Award from "../../Components/Award";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
-import pageLinks from './PageLinks'
 
 export default function Section3() {
 
     return (
-        <PageLayout id={1} links={pageLinks} prevPage={'/pages/1/2'} nextPage={'/pages/1/3'}>
+        <PageLayout id={1} links={5} prevPage={'/pages/1/2'} nextPage={'/pages/1/3'}>
             <SectionLayout title={'награды и достижения холдинга «мосинжпроект» по итогам работы в 2021 году'}>
                     <h3 className={'p-4 mb-8 text-center text-white bg-mosBlue-700 text-lg font-bold'}>Рейтинги АО «Мосинжпроект»</h3>
                     <div className={'flex flex-col lg:flex-row justify-center lg:justyfy-start gap-8 mb-8'}>

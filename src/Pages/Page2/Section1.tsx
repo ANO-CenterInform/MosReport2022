@@ -3,12 +3,11 @@ import SectionLayout from "../../Layouts/SectionLayout";
 import icon1 from './images/icon1.svg'
 import icon2 from './images/icon2.svg'
 import icon3 from './images/icon3.svg'
-import pageLinks from "./PageLinks";
 import PageLayout from "../../Layouts/PageLayout";
 
 export default function Section1() {
     return (
-        <PageLayout id={2} links={pageLinks} prevPage={'/pages/1/5'} nextPage={'/pages/2/2'}>
+        <PageLayout id={2} links={7} prevPage={'/pages/1/5'} nextPage={'/pages/2/2'}>
             <SectionLayout title={'ОБЩИЕ СВЕДЕНИЯ, ПОЛОЖЕНИЕ АКЦИОНЕРНОГО ОБЩЕСТВА В ОТРАСЛИ'} >
                 <div className={'relative flex flex-col justify-center items-center lg:flex-row px-10 h-80 lg:gap-10 bg-mosBlue-700 text-white'}>
                     <div className={'absolute top-0 left-0 h-4 w-48 bg-mosRose-500'}></div>

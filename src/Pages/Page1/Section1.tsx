@@ -19,13 +19,12 @@ import PersonCard from "../../Components/PersonCard";
 import Counter from "../../Components/Couter";
 import SectionLayout from "../../Layouts/SectionLayout";
 import PageLayout from "../../Layouts/PageLayout";
-import pageLinks from './PageLinks'
 
 export default function Section1() {
 
     return (
 
-        <PageLayout id={1} links={pageLinks} prevPage={'/'} nextPage={'/page/1/2'}>
+        <PageLayout id={1} links={5} prevPage={'/'} nextPage={'/page/1/2'}>
             <SectionLayout title={'обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту'} >
                 <div className="relative md:static lg:grid lg:grid-cols-[54px_215px_16px_215px_16px_215px_54px] 2xl:grid-cols-[100px_300px_22px_300px_22px_300px_100px]">
                     <div>{''}</div>

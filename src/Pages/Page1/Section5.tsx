@@ -7,12 +7,11 @@ import icon5 from './img/icon5.svg';
 import Picture from "../../Components/Picture";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
-import pageLinks from './PageLinks'
 
 export default function Section5() {
 
     return (
-        <PageLayout id={1} links={pageLinks} prevPage={'/pages/1/4'} nextPage={'/pages/2/1'}>
+        <PageLayout id={1} links={5} prevPage={'/pages/1/4'} nextPage={'/pages/2/1'}>
             <SectionLayout title={'Задачи, стоящие перед ао «мосинжпроеккт» в следующем году'}>
                 <div className={'mb-8'}>
                     <Picture img={img} alt={''} />

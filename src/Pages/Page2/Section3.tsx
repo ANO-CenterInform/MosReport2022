@@ -3,11 +3,10 @@ import img2 from "./images/img2.jpg"
 import Picture from "../../Components/Picture";
 import SectionLayout from "../../Layouts/SectionLayout";
 import PageLayout from "../../Layouts/PageLayout";
-import pageLinks from "./PageLinks";
 
 export default function Section3() {
     return (
-        <PageLayout id={2} links={pageLinks} prevPage={'/pages/2/2'} nextPage={'/pages/2/4'}>
+        <PageLayout id={2} links={7} prevPage={'/pages/2/2'} nextPage={'/pages/2/4'}>
             <SectionLayout title={'ПОЛОЖЕНИЕ КОМПАНИИ В ОТРАСЛИ'}>
                 <p className={'mb-8 max-md:px-8'}>АО «Мосинжпроект» занимает 3 место в рейтинге крупнейших строительных компаний России (4).</p>
                 <div className={'flex overflow-x-auto mb-8'}>

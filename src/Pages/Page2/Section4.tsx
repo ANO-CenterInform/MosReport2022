@@ -20,13 +20,12 @@ import logo1 from './images/logo1.jpg?format=avif;webp;jpg&picture&quality=60'
 import logo2 from './images/logo2.jpg?format=avif;webp;jpg&picture&quality=60'
 
 import PageLayout from "../../Layouts/PageLayout";
-import pageLinks from "./PageLinks";
 import Picture3 from "../../Components/Picture3";
 
 
 export default function Section4() {
     return (
-        <PageLayout id={2} links={pageLinks} prevPage={'/pages/2/3'} nextPage={'/pages/2/5'}>
+        <PageLayout id={2} links={7} prevPage={'/pages/2/3'} nextPage={'/pages/2/5'}>
             <SectionLayout title={'ПРИОРИТЕТНЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ'}>
                 <SingleParagraph>Инжиниринговая компания «Мосинжпроект» – лидер строительной отрасли Москвы и одна из самых динамично развивающихся компаний России.</SingleParagraph>
                 <div className={'p-12 lg:p-16 bg-neutral-100 mb-8'}>

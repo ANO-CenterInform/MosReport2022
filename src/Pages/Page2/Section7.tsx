@@ -1,5 +1,4 @@
 import PageLayout from "../../Layouts/PageLayout";
-import pageLinks from "./PageLinks";
 import SectionLayout from "../../Layouts/SectionLayout";
 import TwoColumns from "../../Layouts/TwoColumns";
 import Counter from "../../Components/Couter";
@@ -7,7 +6,7 @@ import icon from './images/icon_list.svg'
 
 export default function Section7() {
     return (
-        <PageLayout id={2} links={pageLinks} prevPage={'/pages/2/6'} nextPage={'/pages/3/1'}>
+        <PageLayout id={2} links={7} prevPage={'/pages/2/6'} nextPage={'/pages/3/1'}>
             <SectionLayout title={'ВЗАИМОДЕЙСТВИЕ С МАЛЫМ И СРЕДНИМ БИЗНЕСОМ'}>
                 <TwoColumns>
                     <TwoColumns.Column>

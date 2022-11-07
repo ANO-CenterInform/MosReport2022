@@ -1,10 +1,9 @@
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
-import pageLinks from "./pageLinks";
 
 export default function Section2() {
     return (
-        <PageLayout id={3} links={pageLinks} prevPage={'/pages/3/1'} nextPage={'/pages/3/3'}>
+        <PageLayout id={3} links={4} prevPage={'/pages/3/1'} nextPage={'/pages/3/3'}>
             <SectionLayout title={'Организационная структура'}>
 
                     <div className={'flex flex-col md:flex-row max-md:px-8 md:gap-8'}>

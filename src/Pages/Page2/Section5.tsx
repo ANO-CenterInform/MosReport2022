@@ -1,5 +1,4 @@
 import PageLayout from "../../Layouts/PageLayout";
-import pageLinks from "./PageLinks";
 import SectionLayout from "../../Layouts/SectionLayout";
 import SingleParagraph from "../../Components/SingleParagraph";
 import icon_rise from "./images/icon_rise.svg";
@@ -12,7 +11,7 @@ import H2 from "../../Components/H2";
 
 export default function Section5() {
     return (
-        <PageLayout id={2} links={pageLinks} prevPage={'/pages/2/4'} nextPage={'/pages/2/6'}>
+        <PageLayout id={2} links={7} prevPage={'/pages/2/4'} nextPage={'/pages/2/6'}>
             <SectionLayout title={'КОНКУРЕНТНОЕ ОКРУЖЕНИЕ АКЦИОНЕРНОГО ОБЩЕСТВА И ФАКТОРЫ РИСКА. УПРАВЛЕНИЕ РИСКАМИ, ВЛИЯНИЕ ПАНДЕМИИ'}>
                 <SingleParagraph>Хотя общее положение экономики России в 2021 году улучшилось относительно кри- зисного 2020 года, строительный сектор столкнулся с рядом негативных последствий коронавирусных ограничений:</SingleParagraph>
                 <div className={'flex flex-col lg:flex-row flex-wrap items-center justify-center bg-neutral-100 p-8 mb-8'}>

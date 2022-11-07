@@ -4,12 +4,11 @@ import Quote from "../../Components/Quote";
 import Picture from "../../Components/Picture";
 import SectionLayout from "../../Layouts/SectionLayout";
 import PageLayout from "../../Layouts/PageLayout";
-import pageLinks from './PageLinks'
 
 export default function Section2() {
 
     return (
-        <PageLayout id={1} links={pageLinks} prevPage={'/page/1'} nextPage={'/pages/3'}>
+        <PageLayout id={1} links={5} prevPage={'/page/1'} nextPage={'/pages/3'}>
             <SectionLayout title={'планы на будущее'}>
                 <div className={'mb-8'}>
                     <Picture img={img1} alt={''} />
