@@ -19,6 +19,7 @@ import PersonCard from "../../Components/PersonCard";
 import Counter from "../../Components/Couter";
 import SectionLayout from "../../Layouts/SectionLayout";
 import PageLayout from "../../Layouts/PageLayout";
+import BlueBlock from "../../Components/BlueBlock";
 
 export default function Section1() {
     return (
@@ -51,27 +52,18 @@ export default function Section1() {
                 </div>{/*Block end*/}
 
                 <div className="flex flex-wrap lg:flex-nowrap gap-[50px] justify-center md:justify-between py-8 px-12 bg-neutral-100">
-                    <div className="flex flex-col items-center justify-start"
-                         data-aos="flip-left"
-                         data-aos-easing="ease-in-back"
-                         data-aos-delay="100">
+                    <div className="flex flex-col items-center justify-start">
                         <div className="mb-6"><img src={icon_metro} alt="" /></div>
                         <div>
                             <p className="text-3xl md:text-4xl font-bold text-mosBlue-700"><Counter min={0} max={70}/> км</p>
                             <p className="text-sm">протяженность БКЛ</p>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-start"
-                         data-aos="flip-left"
-                         data-aos-easing="ease-in-back"
-                         data-aos-delay="200">
+                    <div className="flex flex-col items-center justify-start">
                         <div className="mb-6"><img src={icon_train} alt="" /></div>
                         <p className="text-3xl md:text-4xl font-bold text-mosBlue-700"><Counter min={0} max={31}/> станция</p>
                     </div>
-                    <div className="flex flex-col items-center justify-start"
-                         data-aos="flip-left"
-                         data-aos-easing="ease-in-back"
-                         data-aos-delay="300">
+                    <div className="flex flex-col items-center justify-start">
                         <div className="mb-6"><img src={icon_builder} alt="" /></div>
                         <div>
                             <p className="text-3xl md:text-4xl font-bold text-mosBlue-700"><Counter min={3800} max={4000}/> строителей</p>
@@ -116,9 +108,9 @@ export default function Section1() {
                     <div className={'p-8 bg-neutral-100 flex max-md:flex-col flex-wrap lg:flex-nowrap'}>
                         <div className={'max-md:order-2 lg:absolute lg:bottom-0 lg:left-0 lg:w-[376px] lg:border-r-[35px] lg:border-t-[35px] border-white'}>
                             <div><Picture img={img8}  alt={''} /></div>
-                            <div className={'p-6 bg-mosBlue-700 text-white text-center'}>
+                            <BlueBlock extraClass={'text-center'}>
                                 Строительством многофункционального комплекса «Мнёвники».
-                            </div>
+                            </BlueBlock>
                         </div>
                         <p className={'max-md:order-1 max-md:pt-0 p-6 lg:pl-[400px]'}>Строительством уникального, знакового для России объекта «Национальный космический центр», который станет одним из крупнейших в мире космических центров. Площадь объектов превысит 250 тыс. кв. метров. Высотной доминантой комплекса зданий будет 288-метровая башня со шпилем. Именно на строительстве Национального космического центра тестируются и внедряются новые технологии на разных этапах строительного производства, охраны труда, промышленной безопасности.</p>
                     </div>

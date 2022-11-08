@@ -10,7 +10,7 @@ export default function PersonCard({image, name, job}: PersonTypes) {
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className={`flex flex-col items-center`}>
             <div className="flex justify-center"><Picture img={image} alt={''} /></div>
