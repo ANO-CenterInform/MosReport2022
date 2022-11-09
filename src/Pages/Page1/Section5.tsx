@@ -1,10 +1,11 @@
-import img from './img/section5.jpg';
+// @ts-ignore
+import img from './img/section5.jpg?format=avif;webp;jpg&picture&quality=60';
 import icon1 from './img/icon1.svg';
 import icon2 from './img/icon2.svg';
 import icon3 from './img/icon3.svg';
 import icon4 from './img/icon4.svg';
 import icon5 from './img/icon5.svg';
-import Picture from "../../Components/Picture";
+import Picture from "../../Components/Picture3";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
 
@@ -16,7 +17,7 @@ export default function Section5() {
                 <div className={'mb-8'}>
                     <Picture img={img} alt={''} />
                 </div>
-                <div className={'flex flex-col lg:flex-row gap-8 max-md:px-8 text-mosBlue-900'}>
+                <div className={'flex flex-col lg:flex-row gap-8 max-md:px-8 mb-8 mb-24 text-mosBlue-900'}>
                     <div className={'lg:w-1/2'}>
                         <div className={'flex gap-6 mb-8'}>
                             <div className={'shrink-0'}><img src={icon1} alt={''} /></div>

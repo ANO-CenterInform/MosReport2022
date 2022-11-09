@@ -374,7 +374,7 @@ export default function Section3() {
                         </ul>
                     </TwoColumns.Column>
                 </TwoColumns>
-                <div className={'mb-24'}>
+                <div className={'mb:8 lg:mb-24'}>
                     <Picture3 img={img22} alt={''}/>
                 </div>
             </SectionLayout>

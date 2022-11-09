@@ -1,6 +1,5 @@
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
-import SingleParagraph from "../../Components/SingleParagraph";
 import Picture3 from "../../Components/Picture3";
 
 import TwoColumns from "../../Layouts/TwoColumns";

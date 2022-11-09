@@ -1,5 +1,23 @@
 @tailwind base;
+
 @tailwind components;
+
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #0C4E98;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #1A3055;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #EC4437;
+}
 
 @font-face {
     font-family: 'Futura';

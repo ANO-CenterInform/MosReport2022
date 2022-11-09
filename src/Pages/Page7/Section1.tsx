@@ -279,7 +279,7 @@ export default function Section1() {
                         </ul>
                     </TwoColumns.Column>
                 </TwoColumns>
-                <TwoColumns>
+                <TwoColumns extraClass={'mb-8 lg:mb-24'}>
                     <TwoColumns.Column>
                         <p className={'p-8 mb-8 text-white text-3xl uppercase bg-mosBlue-700'}>
                             КОМПЛЕКСНОЕ РАЗВИТИЕ ТЕРРИТОРИИ АДЦ «КОММУНАРКА»

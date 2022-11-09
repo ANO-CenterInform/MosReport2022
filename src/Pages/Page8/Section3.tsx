@@ -9,7 +9,7 @@ import img7 from './img/img7.jpg?format=avif;webp;jpg&picture&quality=60';// @ts
 import img8 from './img/img8.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img9 from './img/img9.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 
-export default function Section1() {
+export default function Section3() {
     return (
         <PageLayout id={8} links={5} prevPage={'/pages/8/2'} nextPage={'/pages/8/4'}>
             <SectionLayout title={'РОТАЦИЯ КАДРОВ'}>

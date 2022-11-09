@@ -1,6 +1,7 @@
 import icon_diploma from "./img/icon_diploma.svg";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
+import Counter from "../../Components/Couter";
 
 export default function Section4() {
     return (
@@ -22,7 +23,7 @@ export default function Section4() {
                             </ol>
                             <div className={'flex flex-col items-center justify-center p-8 lg:p-24 bg-neutral-100'}>
                                 <div className={'mb-6'}><img src={icon_diploma} alt={''} /></div>
-                                <p className={'text-mosBlue-700 text-4xl font-bold'}>73 979 724</p>
+                                <p className={'text-mosBlue-700 text-4xl font-bold'}><Counter min={0} max={73}/> <Counter min={700} max={979}/> <Counter min={500} max={724}/></p>
                                 <p className={'text-center'}>Количество размещаемых дополнительных обыкновенных акций</p>
                             </div>
                         </div>

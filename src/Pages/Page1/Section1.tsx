@@ -1,19 +1,20 @@
-import man1 from "../../../src/images/page1_man1.jpg";
-import man2 from "../../../src/images/page1_man2.jpg";
-import man3 from "../../../src/images/page1_man3.jpg";
+// @ts-ignore
+import man1 from "../../../src/images/page1_man1.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import man2 from "../../../src/images/page1_man2.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import man3 from "../../../src/images/page1_man3.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
 import icon_metro from "../../../src/icons/icon_metro.svg";
 import icon_train from "../../../src/icons/icon_train.svg";
-import icon_builder from "../../../src/icons/icon_builder.svg";
-import img4 from "../../../src/images/page1_img4.jpg";
-import img5 from "../../../src/images/page1_img5.jpg";
-import img6 from "../../../src/images/page1_img6.jpg";
-import img7 from "../../../src/images/page1_img7.jpg";
-import img8 from "../../../src/images/page1_img8.jpg";
-import img9 from "../../../src/images/page1_img9.jpg";
-import img10 from "../../../src/images/page1_img10.jpg";
-import img11 from "../../../src/images/page1_img11.jpg";
-import img12 from "../../../src/images/page1_img12.jpg";
-import Picture from "../../Components/Picture";
+import icon_builder from "../../../src/icons/icon_builder.svg";// @ts-ignore
+import img4 from "../../../src/images/page1_img4.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import img5 from "../../../src/images/page1_img5.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import img6 from "../../../src/images/page1_img6.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import img7 from "../../../src/images/page1_img7.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import img8 from "../../../src/images/page1_img8.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import img9 from "../../../src/images/page1_img9.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import img10 from "../../../src/images/page1_img10.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import img11 from "../../../src/images/page1_img11.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import img12 from "../../../src/images/page1_img12.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
+import Picture from "../../Components/Picture3";
 import icon_project from "../../../src/icons/icon_project.svg";
 import PersonCard from "../../Components/PersonCard";
 import Counter from "../../Components/Couter";
@@ -32,7 +33,7 @@ export default function Section1() {
                             image={man1}
                             name={'Газизуллин Марс Мулланурович'}
                             job={'Председатель совета директоров АО «Мосинжпроект»'} />
-                    <div className="md:hidden w-full bg-mosBlue-700 absolute h-[144px] top-[286px] -z-[1]"></div>
+                    <div className="md:hidden w-full bg-mosBlue-700 absolute h-[144px] top-[286px] -z-[1]">{''}</div>
                     <div>{''}</div>
                     <PersonCard
                             image={man2}
@@ -125,13 +126,13 @@ export default function Section1() {
                 </div>{/*Block end*/}
 
                 <div className={'flex flex-col md:flex-row flex-wrap lg:flex-nowrap lg:gap-6 mb-8 justify-center lg:justify-between'}>
-                    <div className={'flex flex-col justify-between gap-6'}>
+                    <div className={'flex flex-col gap-6'}>
                         <div className={'text-3xl text-white bg-mosBlue-700 uppercase p-6'}>
                             <p className={'text-center'}>в проектном портфеле общества присутствуют также и крупные градостроительные проекты:</p>
                         </div>
                         <div className={'flex flex-col xl:flex-row lg:gap-6 lg:justify-between'}>
-                            <div className={'shrink-0'}>
-                                <img className={'max-md:order-2 max-md:px-8 max-md:mb-8'} src={img11} alt={''}/>
+                            <div className={'max-md:order-2 max-md:px-8 max-md:mb-8 shrink-0'}>
+                                <Picture img={img11} alt={''} className={'mx-auto'}/>
                             </div>
                             <div className={'px-6 lg:pl-8 max-md:order-1 max-md:mb-8 max-md:px-8'}>
                                 <ul>
@@ -143,8 +144,8 @@ export default function Section1() {
                         </div>
                     </div>{/*Block end*/}
 
-                    <div className={'flex flex-col md:mb-8'}>
-                        <div className={'max-md:order-2 max-md:px-8'}><Picture img={img12}  alt={''} /></div>
+                    <div className={'flex flex-col md:mb-8 lg:w-[364px] shrink-0'}>
+                        <div className={'max-md:order-2 max-md:px-8'}><Picture img={img12}  alt={''} className={'mx-auto'} /></div>
                         <div className={'p-6 max-md:order-1 max-md:px-8 max-md:pt-0'}>
                             <ul>
                                 <li className={'list-disc list-outside'}>серфинг-парк «Волна» – крупномасштабный проект комплексного освоения территорий Мневниковской поймы, архитектурная концепция которого разработана крупным международным архитектурным бюро Werner Sobek. Проект включен в Адресную инвестиционную программу города Москвы на 2021-2024 годы.</li>
@@ -153,7 +154,7 @@ export default function Section1() {
                     </div>
                 </div>{/*Block end*/}
 
-                <div className={'flex flex-col lg:flex-row flex-wrap lg:flex-nowrap bg-neutral-100 p-6 md:mb-8 justify-center gap-6'}>
+                <div className={'flex flex-col lg:flex-row flex-wrap lg:flex-nowrap bg-neutral-100 p-6 lg:mb-24 justify-center gap-6'}>
                     <div className={'text-right flex-1'}>
                         <p className={'text-sm'}>более</p>
                         <p className={'text-9xl text-mosBlue-700 font-bold'} data-aos="fade-right" data-aos-delay="100"><Counter min={0} max={60} className={''} /></p>

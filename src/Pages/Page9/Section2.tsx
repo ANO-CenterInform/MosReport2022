@@ -200,7 +200,7 @@ export default function Section2() {
                         <Picture3 img={img12} alt={''} className={'mx-auto'} />
                     </TwoColumns.Column>
                 </TwoColumns>
-                <div className={'mb-24'}>
+                <div className={'mb:8 lg:mb-24'}>
                     <Picture3 img={img13} alt={''} className={'mx-auto'} />
                 </div>
             </SectionLayout>

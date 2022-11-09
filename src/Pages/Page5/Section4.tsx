@@ -16,7 +16,7 @@ export default function Section4() {
                 <div className={'flex overflow-x-auto mb-8'}>
                     <Picture3 img={img9} alt={''} pictureClass={'max-md:shrink-0'} />
                 </div>
-                <TwoColumns extraClass={'mb-24'}>
+                <TwoColumns extraClass={'mb-8 lg:mb-24'}>
                     <TwoColumns.Column>
                         <p>Основные изменения связаны с увеличением численности производственного персонала, направленного на выпол- нение производственной программы 2021-2023 гг.</p>
                         <p>Обществом оказывается социальная поддержка работникам в соответствии с положением о порядке предоставления выплат социального характера и материальной помощи.</p>

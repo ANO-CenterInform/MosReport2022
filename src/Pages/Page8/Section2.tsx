@@ -11,7 +11,7 @@ import img5 from './img/img5.jpg?format=avif;webp;jpg&picture&quality=60';// @ts
 import img6 from './img/img6.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img7 from './img/img7.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 
-export default function Section1() {
+export default function Section2() {
     return (
         <PageLayout id={8} links={5} prevPage={'/pages/8/1'} nextPage={'/pages/8/3'}>
             <SectionLayout title={'СТРУКТУРА КАДРОВОГО СОСТАВА'}>

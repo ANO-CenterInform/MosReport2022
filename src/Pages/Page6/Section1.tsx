@@ -21,7 +21,7 @@ export default function Section1() {
                     <TwoColumns.Column>
                         <div className={'flex items-center gap-8'}>
                             <div className={'shrink-0'}>
-                                <img src={icon_money} />
+                                <img src={icon_money} alt={''} />
                             </div>
                             <div>
                                 <p className={'text-5xl text-mosBlue-700 font-bold mb-2'}>
@@ -37,7 +37,7 @@ export default function Section1() {
                     <TwoColumns.Column>
                         <div className={'flex items-center gap-8'}>
                             <div className={'shrink-0'}>
-                                <img src={icon_money} />
+                                <img src={icon_money} alt={''} />
                             </div>
                             <div>
                                 <p className={'text-5xl text-mosBlue-700 font-bold mb-2'}>
@@ -55,7 +55,7 @@ export default function Section1() {
                     <TwoColumns.Column>
                         <div className={'flex items-center gap-8'}>
                             <div className={'shrink-0'}>
-                                <img src={icon_money} />
+                                <img src={icon_money} alt={''} />
                             </div>
                             <div>
                                 <p className={'text-5xl text-mosBlue-700 font-bold mb-2'}>
@@ -81,7 +81,7 @@ export default function Section1() {
                 <SingleParagraph extraClass={'text-gray-500 font-bold'}>
                     Сумма начисленных и выплаченных дивидендов по результатам деятельности за 2018-2020 годы представлена в таблице, тыс. руб.:
                 </SingleParagraph>
-                <div className={'flex overflow-x-auto mb-24'}>
+                <div className={'flex overflow-x-auto mb-8 lg:mb-24'}>
                     <Picture3 img={img2} alt={''} pictureClass={'max-md:shrink-0'} />
                 </div>
             </SectionLayout>

@@ -11,7 +11,7 @@ import H2 from "../../Components/H2";
 import BlueBlock from "../../Components/BlueBlock";
 // @ts-ignore
 
-export default function Section1() {
+export default function Section4() {
     return (
         <PageLayout id={8} links={5} prevPage={'/pages/8/3'} nextPage={'/pages/8/5'}>
             <SectionLayout title={'Подготовка КАДРОВ'}>

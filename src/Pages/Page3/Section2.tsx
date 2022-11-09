@@ -4,7 +4,7 @@ import SectionLayout from "../../Layouts/SectionLayout";
 export default function Section2() {
     return (
         <PageLayout id={3} links={4} prevPage={'/pages/3/1'} nextPage={'/pages/3/3'}>
-            <SectionLayout title={'Организационная структура'}>
+            <SectionLayout title={'Организационная структура'} extraClass={'justify-center h-full'}>
 
                     <div className={'flex flex-col md:flex-row max-md:px-8 md:gap-8'}>
                         <div className={'md:w-1/2'}>

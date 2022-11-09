@@ -2,11 +2,11 @@ import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
 import TwoColumns from "../../Layouts/TwoColumns";
 
-export default function Section1() {
+export default function Section5() {
     return (
-        <PageLayout id={9} links={7} prevPage={'/pages/8/4'} nextPage={'/pages/9/1'}>
+        <PageLayout id={8} links={5} prevPage={'/pages/8/4'} nextPage={'/pages/9/1'}>
             <SectionLayout title={'ОРГАНИЗАЦИЯ РАБОТЫ И ПРЕДПРИНЯТЫЕ МЕРЫ ПО ОБЕСПЕЧЕНИЮ ОХРАНЫ ЗДОРОВЬЯ ПЕРСОНАЛА И ФУНКЦИОНИРОВАНИЯ ОБЩЕСТВА В УСЛОВИЯХ ПАНДЕМИИ'}>
-                <TwoColumns extraClass={'mb-8'}>
+                <TwoColumns extraClass={'mb-24'}>
                     <TwoColumns.Column>
                         <p>
                             Акционерное общество «Мосинжпроект» в условиях пандемии в 2021 году осуществляло все необходимые меры, направленные на противодействие распространению коронавирусной инфекции (COVID-19) среди работников Общества, обеспечивая при этом непрерывную деятельность и выполнение поставленных задач в полном объеме. В том числе проводилась активная работа по следующим основным направлениям:

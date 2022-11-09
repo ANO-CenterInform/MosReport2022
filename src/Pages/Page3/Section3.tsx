@@ -2,12 +2,15 @@ import icon_leader from './img/icon_leader.svg';
 import icon_people from './img/icon_people.svg';
 import icon_speaker from './img/icon_speaker.svg';
 import icon_winner from './img/icon_winner.svg';
-import man1 from '../../images/page1_man1.jpg';
+// @ts-ignore
+import man1 from '../../images/page1_man1.jpg?format=avif;webp;jpg&picture&quality=60'// @ts-ignore;
+import man2 from "../../images/page1_man2.jpg?format=avif;webp;jpg&picture&quality=60"// @ts-ignore;
+import man3 from "../../images/page1_man3.jpg?format=avif;webp;jpg&picture&quality=60";
 import PersonCard from "../../Components/PersonCard";
-import man2 from "../../images/page1_man2.jpg";
-import man3 from "../../images/page1_man3.jpg";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
+import SingleParagraph from "../../Components/SingleParagraph";
+import H2 from "../../Components/H2";
 
 export default function Section3() {
     return (
@@ -16,25 +19,25 @@ export default function Section3() {
                     <div className={'flex flex-col lg:flex-row items-center lg:items-start justify-between px-12 pt-12 gap-12 bg-neutral-100 font-bold text-center'}>
                         <div className={'flex flex-1 flex-col items-center'}>
                             <div className={'mb-6'}>
-                                <img src={icon_people}/>
+                                <img src={icon_people} alt={''}/>
                             </div>
                             <p className={''}>Общее собрание акционеров Общества</p>
                         </div>
                         <div className={'flex flex-1 flex-col items-center'}>
                             <div className={'mb-6'}>
-                                <img src={icon_leader}/>
+                                <img src={icon_leader} alt={''}/>
                             </div>
                             <p>Совет директоров Общества</p>
                         </div>
                         <div className={'flex flex-1 flex-col items-center'}>
                             <div className={'mb-6'}>
-                                <img src={icon_speaker}/>
+                                <img src={icon_speaker} alt={''}/>
                             </div>
                             <p>Единоличный исполнительный орган – генеральный директор</p>
                         </div>
                         <div className={'flex flex-1 flex-col items-center'}>
                             <div className={'mb-6'}>
-                                <img src={icon_winner}/>
+                                <img src={icon_winner} alt={''}/>
                             </div>
                             <p>Единоличный исполнительный орган – исполнительный директор по девелопменту</p>
                         </div>
@@ -63,11 +66,11 @@ export default function Section3() {
                         </div>
                     </div>{/*Block end*/}
 
-                    <div className={'mb-8 px-8 lg:px-0'}>
-                        <p className={'mb-4'}>No Р-221/21, принято решение об изменении условий размещения дополнительных обыкновенных акций АО «Мосинжпроект», определенных решением об увеличении уставного капитала АО «Мосинжпроект» путем размещения дополнительных обыкновенных акций от 29.11.2019 (с учетом изменения условий размещения дополнительных обыкновенных акций в соответствии с решением единственного акционера от 13.11.2020, утвержденным распоряжением Департамента строительства города Москвы от 13.11.2020 No Р-198/20).</p>
-                    </div>{/* End block */}
+                    <SingleParagraph>
+                        No Р-221/21, принято решение об изменении условий размещения дополнительных обыкновенных акций АО «Мосинжпроект», определенных решением об увеличении уставного капитала АО «Мосинжпроект» путем размещения дополнительных обыкновенных акций от 29.11.2019 (с учетом изменения условий размещения дополнительных обыкновенных акций в соответствии с решением единственного акционера от 13.11.2020, утвержденным распоряжением Департамента строительства города Москвы от 13.11.2020 No Р-198/20).
+                    </SingleParagraph>{/* End block */}
 
-                    <h2 className="max-md:px-8 mb-6 xl:w-2/3 uppercase text-3xl text-neutral-500">СОВЕТ ДИРЕКТОРОВ ОБЩЕСТВА</h2>
+                    <H2>СОВЕТ ДИРЕКТОРОВ ОБЩЕСТВА</H2>
 
                     <div className={'flex flex-col md:flex-row max-md:px-8 md:gap-8 mb-8'}>
                         <div className={'md:w-1/2'}>
@@ -175,7 +178,7 @@ export default function Section3() {
                             <li className={'mb-2'}><span className={'font-bold'}>Жеряков Вячеслав Михайлович</span> – начальник контрольно-ревизи- онного управления Департамента строительства города Москвы.</li>
                         </ul>
                     </div>
-                    <div className={'mb-6 lg:mb-12 px-6 lg:px-0'}>
+                    <div className={'mb-8 lg:mb-24 px-6 lg:px-0'}>
                         <p>Для независимой оценки достоверности данных бухгалтерской (финансовой) отчетно- сти Общество ежегодно привлекает внешних аудиторов. Аудиторы привлекаются на основании проводимых открытых конкурсов, обеспечивающих объективный отбор по критериям, учитывающим опыт аудита, объем и время работ, а также специфику де- ятельности Общества. Аудитором бухгалтерской (финансовой) отчетности АО «Мос- инжпроект» за 2021 год, подготовленной в соответствии с российскими стандартами бухгалтерского учета (РСБУ), является акционерное общество «Аудиторская фирма «Уральский союз» (АО «Аудиторская фирма «Уральский союз»), адрес места нахож- дения: 109004, г. Москва, пер. Большой Факельный, дом 3, ОГРН 1027700302310, ИНН 7705040076, КПП 770901001.</p>
                     </div>
             </SectionLayout>

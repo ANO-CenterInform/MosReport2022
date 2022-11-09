@@ -48,7 +48,7 @@ export default function Section1() {
                         </ul>
                     </TwoColumns.Column>
                 </TwoColumns>
-                <div className={'mb-24'}>
+                <div className={'mb:8 lg:mb-24'}>
                     <Picture3 img={img1} alt={''} className={'mx-auto'} />
                 </div>
             </SectionLayout>

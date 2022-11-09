@@ -50,7 +50,7 @@ export default function Section1() {
                 <div className={'mb-8'}>
                     <Picture3 img={img4} alt={''} />
                 </div>
-                <div className={'mb-24'}>
+                <div className={'mb:8 lg:mb-24'}>
                     <Picture3 img={img5} alt={''} />
                 </div>
             </SectionLayout>

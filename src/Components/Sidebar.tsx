@@ -37,15 +37,15 @@ export default function Sidebar({pageId, links}: LinksProps) {
         <aside>
             <div className="flex flex-col h-full justify-start items-center w-full md:left-0 md:top-0 md:w-28 2xl:w-44
             py-4 md:pt-10 md:h-full color-white bg-mosBlue-900">
-                <button className={'z-40'} onClick={() => setIsOpen(state => !state)}>
-                    {!isOpen ? <div className="flex flex-col justify-center h-8 w-8 space-y-2"><div className="w-8 h-0.5 bg-white"></div>
-                            <div className="w-8 h-0.5 bg-white"></div>
-                            <div className="w-8 h-0.5 bg-white"></div></div> :
+                <button className={'z-40 lg:fixed'} onClick={() => setIsOpen(state => !state)}>
+                    {!isOpen ? <div className="flex flex-col justify-center h-8 w-8 space-y-2"><div className="w-8 h-0.5 bg-white">{''}</div>
+                            <div className="w-8 h-0.5 bg-white">{''}</div>
+                            <div className="w-8 h-0.5 bg-white">{''}</div></div> :
 
                         <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              stroke="#fff" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                  d="M6 18L18 6M6 6l12 12"></path>
+                                  d="M6 18L18 6M6 6l12 12">{''}</path>
                         </svg>
                     }
                 </button>
@@ -92,7 +92,7 @@ export default function Sidebar({pageId, links}: LinksProps) {
                     </div>
                 </Transition.Child>
 
-                <div className='absolute sm:top-0 sm:left-0 md:ml-28 2xl:ml-44 p-6 bg-mosBlue-700 text-white h-full w-full lg:w-96 z-40'>
+                <div className='absolute sm:top-0 sm:left-0 md:ml-28 2xl:ml-44 p-6 bg-mosBlue-700 text-white h-full w-full lg:w-96 z-40 overflow-y-scroll scrollbar'>
                     <div className={'mb-12'}><Picture img={mosLogo} /></div>
                     <Accordion>
                         <Accordion.Trigger><div className={'mb-4'}>обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</div></Accordion.Trigger>
@@ -152,6 +152,32 @@ export default function Sidebar({pageId, links}: LinksProps) {
                     </Accordion>
                     <div className={'mb-4 pl-6 uppercase'}><NaviLink path={'/pages/6/1'} text={'Распределение прибыли Общества'} /></div>
                     <div className={'mb-4 pl-6 uppercase'}><NaviLink path={'/pages/7/1'} text={'Инвестиционная деятельность'} /></div>
+                    <Accordion>
+                        <Accordion.Trigger><div className={'mb-4'}>Кадровая и социальная политика</div></Accordion.Trigger>
+                        <Accordion.Content>
+                            <ul>
+                                <NaviLink path={'/pages/8/1'} text={'01. Структура кадрового состава'} />
+                                <NaviLink path={'/pages/8/2'} text={'02. Ротация кадров'} />
+                                <NaviLink path={'/pages/8/3'} text={'03. Подготовка кадров'} />
+                                <NaviLink path={'/pages/8/4'} text={'04. Организация работы и предпринятые меры по обеспечению охраны здоровья персонала и функционирования Общества при пандемии'} />
+                            </ul>
+                        </Accordion.Content>
+                    </Accordion>
+                    <Accordion>
+                        <Accordion.Trigger><div className={'mb-4'}>Управление устойчивым развитием</div></Accordion.Trigger>
+                        <Accordion.Content>
+                            <ul>
+                                <NaviLink path={'/pages/9/1'} text={'01. Подход к деятельности в области устойчивого развития'} />
+                                <NaviLink path={'/pages/9/2'} text={'02. Строительство качественной и безопасной инфраструктуры для жизни (в рамках градостроительного комплекса Москвы)'} />
+                                <NaviLink path={'/pages/9/3'} text={'03. Охрана окружающей среды (E)'} />
+                                <NaviLink path={'/pages/9/4'} text={'04. Социальная деятельность (S)'} />
+                                <NaviLink path={'/pages/9/5'} text={'05. Управленческий аспект. Взаимодействие с заинтересованными сторонами (G)'} />
+                                <NaviLink path={'/pages/9/6'} text={'06. Ответственный подход в цепочке поставок'} />
+                                <NaviLink path={'/pages/9/7'} text={'07. Цифровизация, информационная безопасность'} />
+                            </ul>
+                        </Accordion.Content>
+                    </Accordion>
+                    <div className={'mb-4 pl-6 uppercase'}><NaviLink path={'/pages/10/1'} text={'Справочная информация для акционеров'} /></div>
                 </div>
             </Transition>
         </aside>

@@ -1,7 +1,9 @@
-import img1 from '../../../src/images/page1_screen2_img1.jpg';
-import img2 from '../../../src/images/page1_screen2_img2.jpg';
+// @ts-ignore
+import img1 from '../../../src/images/page1_screen2_img1.jpg?format=avif;webp;jpg&picture&quality=60';
+// @ts-ignore
+import img2 from '../../../src/images/page1_screen2_img2.jpg?format=avif;webp;jpg&picture&quality=60';
 import Quote from "../../Components/Quote";
-import Picture from "../../Components/Picture";
+import Picture from "../../Components/Picture3";
 import SectionLayout from "../../Layouts/SectionLayout";
 import PageLayout from "../../Layouts/PageLayout";
 
@@ -13,7 +15,7 @@ export default function Section2() {
                 <div className={'mb-8'}>
                     <Picture img={img1} alt={''} />
                 </div>
-                <div className={'mb-8 flex flex-wrap md:flex-nowrap md:gap-6 lg:gap-8'}>
+                <div className={'mb-8 lg:mb-24 flex flex-wrap md:flex-nowrap md:gap-6 lg:gap-8'}>
                     <div className={'lg:w-1/2 max-md:px-8'}>
                         <p className={'mb-6'}>Заместитель Мэра Москвы в Правительстве Москвы по вопросам градостроительной политики и строительства Андрей Юрьевич Бочкарёв сообщил о том, что до конца 2024 года в столице будет построено 27 станций метро. АО «Мосинжпроект», как генеральный проектировщик и генеральный подрядчик, является активным участником процесса строительства новых линий и станций метро.</p>
 

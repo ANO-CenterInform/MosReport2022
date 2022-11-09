@@ -1,6 +1,8 @@
-import img1 from "./images/img1.jpg"
-import img2 from "./images/img2.jpg"
-import Picture from "../../Components/Picture";
+// @ts-ignore
+import img1 from "./images/img1.jpg?format=avif;webp;jpg&picture&quality=60";
+// @ts-ignore
+import img2 from "./images/img2.jpg?format=avif;webp;jpg&picture&quality=60";
+import Picture from "../../Components/Picture3";
 import SectionLayout from "../../Layouts/SectionLayout";
 import PageLayout from "../../Layouts/PageLayout";
 

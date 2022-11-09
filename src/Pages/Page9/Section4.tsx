@@ -334,7 +334,7 @@ export default function Section4() {
                         </p>
                     </TwoColumns.Column>
                 </TwoColumns>
-                <TwoColumns extraClass={'mb-24'}>
+                <TwoColumns extraClass={'mb:8 lg:mb-24'}>
                     <TwoColumns.Column>
                         <Picture3 img={img33} alt={''} className={'mx-auto'}/>
                     </TwoColumns.Column>

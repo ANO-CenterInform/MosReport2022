@@ -1,11 +1,12 @@
-import award1 from "./img/award1.jpg";
-import award2 from "./img/award2.jpg";
-import award3 from "./img/award3.jpg";
-import award4 from "./img/award4.jpg";
-import award5 from "./img/award5.jpg";
-import award6 from "./img/award6.jpg";
-import award7 from "./img/award7.jpg";
-import award8 from "./img/award8.jpg";
+// @ts-ignore
+import award1 from "./img/award1.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
+import award2 from "./img/award2.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
+import award3 from "./img/award3.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
+import award4 from "./img/award4.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
+import award5 from "./img/award5.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
+import award6 from "./img/award6.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
+import award7 from "./img/award7.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
+import award8 from "./img/award8.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
 import Award from "../../Components/Award";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
@@ -13,7 +14,7 @@ import SectionLayout from "../../Layouts/SectionLayout";
 export default function Section3() {
 
     return (
-        <PageLayout id={1} links={5} prevPage={'/pages/1/2'} nextPage={'/pages/1/3'}>
+        <PageLayout id={1} links={5} prevPage={'/pages/1/2'} nextPage={'/pages/1/4'}>
             <SectionLayout title={'награды и достижения холдинга «мосинжпроект» по итогам работы в 2021 году'}>
                     <h3 className={'p-4 mb-8 text-center text-white bg-mosBlue-700 text-lg font-bold'}>Рейтинги АО «Мосинжпроект»</h3>
                     <div className={'flex flex-col lg:flex-row justify-center lg:justyfy-start gap-8 mb-8'}>
@@ -61,7 +62,7 @@ export default function Section3() {
                         />
                     </div>
 
-                    <div className={'flex flex-col lg:flex-row gap-8'}>
+                    <div className={'flex flex-col lg:flex-row gap-8 mb-8 lg:mb-24'}>
                         <div className={'lg:w-1/2'}>
                             <h3 className={'p-4 mb-8 text-center text-white bg-mosBlue-700 text-lg font-bold'}>Тор-50 управления закупочной деятельностью</h3>
                             <Award
