@@ -55,8 +55,8 @@ export default function Section1() {
                         </p>
                     </TwoColumns.Column>
                 </TwoColumns>
-                <div className={'flex overflow-x-auto mb-8'}>
-                    <Picture3 img={img3} alt={''} pictureClass={'max-md:shrink-0'} />
+                <div className={'mb-8'}>
+                    <Picture3 img={img3} alt={''} />
                 </div>
                 <H1>
                     ИНВЕСТИЦИОННЫЕ ПРОЕКТЫ ОБЩЕСТВА:
@@ -103,7 +103,7 @@ export default function Section1() {
                         </p>
                     </TwoColumns.Column>
                     <TwoColumns.Column>
-                        <p className={'p-8 mb-8 text-white text-3xl uppercase bg-mosBlue-700'}>
+                        <p className={'p-8 mb-8 text-white lg:text-3xl uppercase bg-mosBlue-700'}>
                             СТРОИТЕЛЬСТВО МНОГОФУНКЦИОНАЛЬНОГО КОМПЛЕКСА В СОСТАВЕ ТПУ «МНЁВНИКИ»
                         </p>
                         <Picture3 img={img6} alt={''} />
@@ -123,7 +123,7 @@ export default function Section1() {
 
                 <TwoColumns>
                     <TwoColumns.Column>
-                        <p className={'p-8 mb-8 text-white text-3xl uppercase bg-mosBlue-700'}>
+                        <p className={'p-8 mb-8 text-white lg:text-3xl uppercase bg-mosBlue-700'}>
                             ПРОЕКТ СТРОИТЕЛЬСТВА МНОГОФУНКЦИОНАЛЬНОГО ВЫСОТНОГО ЖИЛОГО КОМПЛЕКСА С ПОДЗЕМНОЙ АВТОСТОЯНКОЙ НА ТЕРРИТОРИИ ММДЦ «МОСКВА -СИТИ»
                         </p>
                         <div>

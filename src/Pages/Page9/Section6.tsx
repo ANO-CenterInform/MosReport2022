@@ -59,7 +59,7 @@ export default function Section6() {
                         </div>
                     </TwoColumns.Column>
                 </TwoColumns>
-                <p className={'pt-8 mb:8 lg:mb-24 border-t border-gray-400 text-gray-400'}>
+                <p className={'pt-8 mb-8 max-md:px-8 lg:mb-24 border-t border-gray-400 text-gray-400'}>
                     11. Коммерческие закупки — это закупки, которые проводятся коммерческими организациями в соответствии с собственными регламентами и правилами, принятыми организаторами, с использованием собственных финансовых средств.
                 </p>
             </SectionLayout>

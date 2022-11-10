@@ -58,19 +58,19 @@ export default function Section3() {
                     </TwoColumns.Column>
                 </TwoColumns>
                 <BlueBlock extraClass={'flex flex-col lg:flex-row justify-center lg:items-start lg:justify-between gap-8'}>
-                    <div className={'lg:w-1/3 pr-12'}>
+                    <div className={'lg:w-1/3 lg:pr-12'}>
                         <p className={'mb-4'}><img src={icon_pen} alt={''} /></p>
                         <p className={'text-5xl font-bold'}><Counter min={222} max={462} /></p>
                         <p className={'uppercase'}>ВЫЕЗДНЫЕ проверки </p>
                         <p>проведено в 2021 году</p>
                     </div>
-                    <div className={'lg:w-1/3 px-12 border-l border-r border-dashed border-white'}>
+                    <div className={'lg:w-1/3 lg:px-12 lg:border-l lg:border-r border-dashed border-white'}>
                         <p className={'mb-4'}><img src={icon_check} alt={''} /></p>
                         <p className={'text-5xl font-bold'}><Counter min={1566} max={1721} /></p>
                         <p className={'uppercase'}>НАРУШЕНИЕ</p>
                         <p>природоохранных требований, из них устранено в установленные сроки – 851</p>
                     </div>
-                    <div className={'lg:w-1/3 pl-12'}>
+                    <div className={'lg:w-1/3 lg:pl-12'}>
                         <p className={'mb-4'}><img src={icon_money} alt={''} /></p>
                         <p className={'text-5xl font-bold'}><Counter min={0} max={15} />,58</p>
                         <p className={'uppercase'}>МЛН РУБ.</p>
@@ -231,7 +231,7 @@ export default function Section3() {
                     <Picture3 img={img20} alt={''}/>
                 </div>
                 <BlueBlock>
-                    <H2 extraClass={'sm:text-white'}>
+                    <H2 extraClass={'sm:text-white max-md:text-white'}>
                         ОХРАНА ТРУДА
                     </H2>
                     <p>
@@ -309,7 +309,7 @@ export default function Section3() {
                     </TwoColumns.Column>
                 </TwoColumns>
                 <BlueBlock>
-                    <H2 extraClass={'sm:text-white'}>
+                    <H2 extraClass={'sm:text-white max-md:text-white'}>
                         КУЛЬТУРА БЕЗОПАСНОСТИ
                     </H2>
                     <p>

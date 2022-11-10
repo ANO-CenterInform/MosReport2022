@@ -83,11 +83,11 @@ export default function Section4() {
                         <img src={icon_rels} className={'mb-6'} alt={''} />
                         <p className={'text-center'}>Инфраструктура рельсового транспорта</p>
                     </div>
-                    <div className={'flex flex-col flex-1 items-center px-6 border-l border-r border-dashed border-mosBlue-700'}>
+                    <div className={'flex flex-col flex-1 items-center px-6 lg:border-l lg:border-r border-dashed border-mosBlue-700'}>
                         <img src={icon_krp} className={'mb-6'} alt={''} />
                         <p className={'text-center'}>Комплексное развитие территорий (КРТ) и крупных градостроительных проектов (КГП)</p>
                     </div>
-                    <div className={'flex flex-col flex-1 items-center px-6 border-r border-dashed border-mosBlue-700'}>
+                    <div className={'flex flex-col flex-1 items-center px-6 lg:border-r border-dashed border-mosBlue-700'}>
                         <img src={icon_cran} className={'mb-6'} alt={''} />
                         <p className={'text-center'}>Припортовая инфраструктура</p>
                     </div>

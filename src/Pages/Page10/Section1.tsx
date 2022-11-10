@@ -5,7 +5,7 @@ export default function Section1() {
     return (
         <PageLayout id={10} links={0} prevPage={'/pages/9/7'} nextPage={''}>
             <SectionLayout title={'СПРАВОЧНАЯ ИНФОРМАЦИЯ ДЛЯ АКЦИОНЕРОВ'} extraClass={'justify-center h-full'}>
-                <div className={'mb-24'}>
+                <div className={'mb-24 max-md:px-8'}>
                     <p className={'font-bold'}>Наименование Общества, организационно-правовая форма</p>
                     <p>Полное наименование Общества: акционерное общество «Мосинжпроект». Сокращенное наименование Общества: АО «Мосинжпроект».</p>
                     <p className={'font-bold'}>Адрес места нахождения Общества:</p>

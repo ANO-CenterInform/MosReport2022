@@ -10,7 +10,7 @@ type CounterTypes = {
 
 export default function Counter({min, max, speed, className}: CounterTypes) {
 
-    let timer: string | number | boolean | NodeJS.Timeout | undefined;
+    let timer: string | number | boolean | undefined;
     const [counter, setCounter] = useState(min);
 
     const elementRef = useRef<HTMLDivElement>(null);

@@ -20,9 +20,9 @@ export default function PersonCard({image, name, job}: PersonTypes) {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className={`flex flex-col items-center`}>
-            <div className="flex justify-center"><Picture img={image} alt={''} /></div>
+            <div className="flex justify-center z-40"><Picture img={image} alt={''} /></div>
             <div className="flex-1 p-4 bg-mosRose-500 text-white text-center max-w-[300px] z-40">
-                <p className="font-bold">{name}</p>
+                <p className="font-bold z-40">{name}</p>
                 <p>{job}</p>
             </div>
         </motion.div>

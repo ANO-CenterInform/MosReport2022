@@ -28,7 +28,7 @@ export default function Section7() {
                         <p className={'lg:w-1/2 max-md:text-center'}>заключенных по результатам закупок, участниками которых являются только МСП</p>
                     </div>
                 </div>
-                <div className={'mb-24 pt-8 border-t border-gray-400'}>
+                <div className={'mb-24 pt-8 border-t border-gray-400 max-md:px-8'}>
                     <ul className={'list-inside text-gray-400'}>
                         <li>10. https://zakupki.gov.ru/223/purchase/public/account/view/general-information.html?id=104009</li>
                     </ul>
