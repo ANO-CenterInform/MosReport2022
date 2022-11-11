@@ -13,7 +13,7 @@ export default function Section5() {
 
     return (
         <PageLayout id={1} links={5} prevPage={'/pages/1/4'} nextPage={'/pages/2/1'}>
-            <SectionLayout title={'Задачи, стоящие перед ао «мосинжпроеккт» в следующем году'}>
+            <SectionLayout title={'Задачи, стоящие перед ао «мосинжпроект» в следующем году'}>
                 <div className={'mb-8'}>
                     <Picture img={img} alt={''} />
                 </div>

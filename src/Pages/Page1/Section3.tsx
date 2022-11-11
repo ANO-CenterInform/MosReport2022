@@ -7,6 +7,7 @@ import award5 from "./img/award5.jpg?format=avif;webp;jpg&picture&quality=60";//
 import award6 from "./img/award6.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
 import award7 from "./img/award7.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
 import award8 from "./img/award8.jpg?format=avif;webp;jpg&picture&quality=60";// @ts-ignore
+import awardExpert from "./img/awardExpert.jpg?format=avif;webp;jpg&picture&quality=60'";// @ts-ignore
 import Award from "../../Components/Award";
 import PageLayout from "../../Layouts/PageLayout";
 import SectionLayout from "../../Layouts/SectionLayout";
@@ -56,7 +57,7 @@ export default function Section3() {
                         />
                         <Award
                             title={'Рейтинг устойчивого развития «Эксперт»'}
-                            img={award6}
+                            img={awardExpert}
                             rating={'59 место (+2)'}
                             className={'mb-8 max-md:mx-6 lg:w-1/3'}
                         />
@@ -67,7 +68,7 @@ export default function Section3() {
                             <h3 className={'p-4 mb-8 text-center text-white bg-mosBlue-700 text-lg font-bold'}>Тор-50 управления закупочной деятельностью</h3>
                             <Award
                                 title={'По версии ООО «Эксперт Бизнес-Решения»'}
-                                img={award7}
+                                img={award6}
                                 rating={'65 место (+9)'}
                                 className={'mb-8 max-md:mx-6 lg:w-1/2 mx-auto'}
                             />

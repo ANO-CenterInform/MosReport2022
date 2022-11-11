@@ -73,7 +73,7 @@ export default function Section4() {
                             В период 2022-2024 годов АО «Мосинжпроект» осуществляет планирование своей деятельности по строительству метро, объектов транспортной и городской инфраструктуры согласно «Адресной инвестиционной программе города Москвы» (АИП Москвы), утвержденной Постановлением Правительства города Москвы от 12.10.2021 No 1591-ПП.</p>
                     </TwoColumns.Column>
                 </TwoColumns>{/* End of block */}
-                <SingleParagraph>Для реализации поставленных задач по развитию транспортной инфраструктуры в АИП Москвы в период 2022-20246 запланиро- ваны следующие объемы финансирования:</SingleParagraph>
+                <SingleParagraph>Для реализации поставленных задач по развитию транспортной инфраструктуры в АИП Москвы в период 2022-20246 запланированы следующие объемы финансирования:</SingleParagraph>
                 <div className={'flex overflow-x-auto mb-8'}>
                     <Picture3 img={img3} alt={''} pictureClass={'max-md:shrink-0'} />
                 </div>{/* End of block */}
@@ -100,19 +100,19 @@ export default function Section4() {
                 <div className={'mb-8'}>
                     <Picture3 img={img4} alt={''} pictureClass={'max-md:shrink-0'} />
                 </div>
-                <SingleParagraph>В 2021 году приступил к регулярной работе Комитет по новым проектам – коллегиаль- ный орган, управляющий процессами развития бизнеса и привлечения новых доход- ных проектов Общества.
+                <SingleParagraph>В 2021 году приступил к регулярной работе Комитет по новым проектам – коллегиальный орган, управляющий процессами развития бизнеса и привлечения новых доходных проектов Общества.
                     За отчетный период АО «Мосинжпроект» получило успешные квалификации в РФ:</SingleParagraph>
                 <TwoColumns extraClass={'bg-neutral-100'}>
                     <TwoColumns.Column extraClass={'justify-center items-center p-12'}>
                         <div className={'shrink-0'}>
                             <Picture3 img={logo1} pictureClass={'block mb-6'} className={'mx-auto'}  />
-                            <p className={'text-center'}>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
+                            <p className={'text-center'}>на выполнение СМР для АО «МХК «ЕвроХим», одного из ведущих производителей минеральных удобрений в мире;</p>
                         </div>
                     </TwoColumns.Column>
                     <TwoColumns.Column extraClass={'justify-center items-center p-12'}>
                         <div className={'shrink-0'}>
                             <Picture3 img={logo2} pictureClass={'mb-6 block'} className={'mx-auto'}  />
-                            <p className={'text-center'}>на выполнение СМР для АО «МХК «Евро- Хим», одного из ведущих производителей минеральных удобрений в мире;</p>
+                            <p className={'text-center'}>на выполнение СМР для АО «МХК «ЕвроХим», одного из ведущих производителей минеральных удобрений в мире;</p>
                         </div>
                     </TwoColumns.Column>
                 </TwoColumns>

@@ -14,7 +14,7 @@ export default function Section3() {
                 <div className={'flex overflow-x-auto mb-8'}>
                     <Picture img={img1} alt={''} pictureClass={'max-md:shrink-0'} />
                 </div>
-                <p className={'mb-8 max-md:px-8 pb-8 border-b border-gray-500'}>АО «Мосинжпроект» сохраняет лидерство по объему реализованной продукции в секторе «Инжиниринг, промышленно-инфра- структурное строительство» рейтинга крупнейших компаний России, Эксперт-400 (5).</p>
+                <p className={'mb-8 max-md:px-8 pb-8 border-b border-gray-500'}>АО «Мосинжпроект» сохраняет лидерство по объему реализованной продукции в секторе «Инжиниринг, промышленно-инфраструктурное строительство» рейтинга крупнейших компаний России, Эксперт-400 (5).</p>
                 <div className={'flex overflow-x-auto mb-24'}>
                     <Picture img={img2} alt={''} pictureClass={'max-md:shrink-0'} />
                 </div>
