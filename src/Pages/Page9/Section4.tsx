@@ -169,7 +169,7 @@ export default function Section4() {
                         <div className={'lg:w-1/2 lg:border-r border-white border-dashed text-center lg:pr-16'}>
                             <p className={'mb-8 text-3xl font-bold'}>1 МЕСТО</p>
                             <p className={'mb-8 pb-8 border-b border-white border-dashed'}>
-                                в ежегодном конкурсе профессионального мастерства в номинации «Лучшая команда молодых специалистов в области дорожно- транспортного строительства»;
+                                в ежегодном конкурсе профессионального мастерства в номинации «Лучшая команда молодых специалистов в области дорожно-транспортного строительства»;
                             </p>
                             <p className={'mb-8  text-3xl font-bold'}>2 МЕСТО</p>
                             <p className={'mb-8 pb-8 lg:border-b border-white border-dashed'}>
