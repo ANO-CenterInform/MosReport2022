@@ -23,7 +23,7 @@ export default function Section1() {
                         <p>Объем ВВП России за 2021 год</p>
                     </div>
                 </div>
-                <div className={'relative flex flex-col justify-center items-center lg:flex-row px-10  max-md:py-10 lg: lg:gap-10 bg-mosBlue-900 text-white'}>
+                <div className={'relative flex flex-col justify-center items-center lg:flex-row px-10  max-md:py-10 lg:h-80 lg:gap-10 bg-mosBlue-900 text-white'}>
                     <div className={'absolute top-0 right-0 h-4 w-56 bg-mosRose-500'}></div>
                     <div className={'flex lg:w-2/3 lg:justify-end uppercase'}>
                         <div className={'flex items-end'}>
@@ -39,7 +39,7 @@ export default function Section1() {
                         <p>бюджетных инвестиций пришлось на дорожное хозяйство</p>
                     </div>
                 </div>
-                <div className={'relative flex flex-col justify-center items-center lg:flex-row px-10 max-md:py-10 lg: lg:gap-10 bg-mosBlue-700 text-white'}>
+                <div className={'relative flex flex-col justify-center items-center lg:flex-row px-10 max-md:py-10 lg:h-80 lg:gap-10 bg-mosBlue-700 text-white lg:mb-24'}>
                     <div className={'absolute top-0 left-0 h-4 w-56 bg-mosRose-500'}></div>
                     <div className={'flex lg:w-2/3 lg:justify-end uppercase'}>
                         <div className={'flex items-end'}>
