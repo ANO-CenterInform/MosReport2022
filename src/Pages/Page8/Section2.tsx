@@ -34,14 +34,9 @@ export default function Section2() {
                             </p>
                     </TwoColumns.Column>
                 </TwoColumns>
-                <TwoColumns extraClass={'mb-8'}>
-                    <TwoColumns.Column>
+                <div className={'mb-8'}>
                         <Picture3 img={img4} alt={''} />
-                    </TwoColumns.Column>
-                    <TwoColumns.Column>
-                        <Picture3 img={img5} alt={''} />
-                    </TwoColumns.Column>
-                </TwoColumns>
+                </div>
                 <p className={'p-8 mb-8 text-white text-3xl uppercase bg-mosBlue-700'}>
                     БОЛЬШИНСТВО СОТРУДНИКОВ ОБЩЕСТВА ИМЕЮТ ВЫСШЕЕ ОБРАЗОВАНИЕ – 95%,
                     <br/>СРЕДНЕЕ СПЕЦИАЛЬНОЕ/ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАНИЕ 3,5%, СРЕДНЕЕ – 1,5%.

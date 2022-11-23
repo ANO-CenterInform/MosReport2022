@@ -9,6 +9,7 @@ import icon_rels from './images/icon_rels.svg';
 import icon_krp from './images/icon_krt.svg'
 import icon_cran from './images/icon_cran.svg'
 import icon_plant from './images/icon_plant.svg'
+import icon_object from './images/icon_object.svg'
 
 // @ts-ignore
 import img3 from './images/img3.jpg?format=avif;webp;jpg&picture&quality=60'
@@ -51,7 +52,7 @@ export default function Section4() {
                         </div>
                         <div className={'flex flex-col items-center text-center lg:w-1/3 px-8 mb-8'}>
                             <div className={'shrink-0 mb-6'}>
-                                <img className={'mx-auto'} src={icon_tpu} alt={''}/>
+                                <img className={'mx-auto'} src={icon_object} alt={''}/>
                             </div>
                             <p>Строительство зданий и сооружений гражданского назначения</p>
                         </div>

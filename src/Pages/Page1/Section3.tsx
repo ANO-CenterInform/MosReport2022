@@ -65,15 +65,6 @@ export default function Section3() {
 
                     <div className={'flex flex-col lg:flex-row gap-8 mb-8 lg:mb-24'}>
                         <div className={'lg:w-1/2'}>
-                            <h3 className={'p-4 mb-8 text-center text-white bg-mosBlue-700 text-lg font-bold'}>Тор-50 управления закупочной деятельностью</h3>
-                            <Award
-                                title={'По версии ООО «Эксперт Бизнес-Решения»'}
-                                img={award6}
-                                rating={'65 место (+9)'}
-                                className={'mb-8 max-md:mx-6 lg:w-1/2 mx-auto'}
-                            />
-                        </div>
-                        <div className={'lg:w-1/2'}>
                             <h3 className={'p-4 mb-8 text-center text-white bg-mosBlue-700 text-lg font-bold'}>Рейтинг качества управления «Эксперт РА»</h3>
                             <Award
                                 title={"«А+.gq – Очень высокий уровень качества управления» «(Рейтинг подтвержден)»"}

@@ -35,7 +35,7 @@ export default function Section2() {
                             </div>
                             <div>
                                 <p className={'mb-4 font-bold text-3xl text-mosBlue-700'}>
-                                    <Counter min={0} max={5} className={'text-4xl'}/> собъектов дорожного стоительства
+                                    <Counter min={0} max={5} className={'text-4xl'}/> объектов дорожного стоительства
                                 </p>
                                 <p className={'text-sm'}>в т. ч. в 2021–4</p>
                             </div>
@@ -59,7 +59,7 @@ export default function Section2() {
                             </div>
                             <div>
                                 <p className={'mb-4 font-bold text-3xl text-mosBlue-700'}>
-                                    <Counter min={0} max={3} className={'text-4xl'}/> собъекта гражданского строительства
+                                    <Counter min={0} max={3} className={'text-4xl'}/> объекта гражданского строительства
                                 </p>
                                 <p className={'text-sm'}>в т. ч. в 2021–3</p>
                             </div>
