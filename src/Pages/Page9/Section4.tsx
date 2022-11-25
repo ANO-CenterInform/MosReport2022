@@ -4,6 +4,7 @@ import SingleParagraph from "../../Components/SingleParagraph";
 import H2 from "../../Components/H2";
 import TwoColumns from "../../Layouts/TwoColumns";
 // @ts-ignore
+import img22 from './img/img22.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img23 from './img/img23.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img24 from './img/img24.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img25 from './img/img25.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
@@ -15,7 +16,7 @@ import img29 from './img/img29.jpg?format=avif;webp;jpg&picture&quality=60';// @
 import img30 from './img/img30.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img31 from './img/img31.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img32 from './img/img32.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
-import img33 from './img/img33.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
+import img33 from './img/img33.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignor
 import img34 from './img/img34.jpg?format=avif;webp;jpg&picture&quality=60';
 import Picture3 from "../../Components/Picture3";
 import BlueBlock from "../../Components/BlueBlock";
@@ -93,6 +94,9 @@ export default function Section4() {
                         </p>
                     </TwoColumns.Column>
                 </TwoColumns>
+                <div className={'mb-8'}>
+                    <Picture3 img={img22} alt={''}/>
+                </div>
                 <div className={'mb-8'}>
                     <Picture3 img={img23} alt={''}/>
                 </div>

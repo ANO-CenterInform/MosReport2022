@@ -13,7 +13,6 @@ import img18 from './img/img18.jpg?format=avif;webp;jpg&picture&quality=60';// @
 import img19 from './img/img19.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img20 from './img/img20.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img21 from './img/img21.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
-import img22 from './img/img22.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import icon_pen from './img/icon_pen.svg';
 import icon_check from './img/icon_check.svg';
 import icon_money from './img/icon_money.svg';
@@ -374,9 +373,6 @@ export default function Section3() {
                         </ul>
                     </TwoColumns.Column>
                 </TwoColumns>
-                <div className={'mb:8 lg:mb-24'}>
-                    <Picture3 img={img22} alt={''}/>
-                </div>
             </SectionLayout>
         </PageLayout>
     );
