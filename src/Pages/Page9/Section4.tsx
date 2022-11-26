@@ -16,8 +16,8 @@ import img29 from './img/img29.jpg?format=avif;webp;jpg&picture&quality=60';// @
 import img30 from './img/img30.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img31 from './img/img31.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import img32 from './img/img32.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
-import img33 from './img/img33.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignor
-import img34 from './img/img34.jpg?format=avif;webp;jpg&picture&quality=60';
+import img33 from './img/img33.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
+import img34 from './img/img34.jpg?format=avif;webp;jpg&picture&quality=60';// @ts-ignore
 import Picture3 from "../../Components/Picture3";
 import BlueBlock from "../../Components/BlueBlock";
 // @ts-ignore
