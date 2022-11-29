@@ -92,7 +92,7 @@ export default function Sidebar({pageId, links}: LinksProps) {
                     </div>
                 </Transition.Child>
 
-                <div className='absolute sm:top-0 sm:left-0 md:ml-28 2xl:ml-44 p-6 bg-mosBlue-700 text-white h-full w-full lg:w-96 z-50 overflow-y-scroll scrollbar'>
+                <div className='fixed sm:top-0 sm:left-0 md:ml-28 2xl:ml-44 p-6 bg-mosBlue-700 text-white h-full w-full lg:w-96 z-50 overflow-y-scroll scrollbar'>
                     <div className={'mb-12'}><Picture img={mosLogo} /></div>
                     <Accordion>
                         <Accordion.Trigger><div className={'mb-4'}>обращение к акционерам председателя совета директоров, генерального директора и исполнительного директора по девелопменту</div></Accordion.Trigger>
